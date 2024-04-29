@@ -122,6 +122,12 @@ h1 {
 
 img {
     padding-bottom: 5vh;
+    max-height: 90vh;
+}
+
+video {
+    max-width: 100%;
+    max-height: 90vh;
 }
 
 @media screen and (max-width: 600px) {
