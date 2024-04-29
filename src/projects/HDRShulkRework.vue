@@ -38,9 +38,9 @@
                 <h3>What I learned</h3>
                 <p>I learned the following technologies for this project:
                     <ul>
-                        <li>    Rust</li>
-                        <li>    Skyline</li>
-                        <li>    Smashline 1&2</li>
+                        <li>Rust</li>
+                        <li>Skyline</li>
+                        <li>Smashline 1&2</li>
                     </ul>
                     I also had to learn other Super Smash Bros. Ultimate modding techniques such as animation swapping.</p>
                 <h3>Prioritization</h3>
