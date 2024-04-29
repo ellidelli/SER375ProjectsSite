@@ -45,12 +45,14 @@
                     I also had to learn other Super Smash Bros. Ultimate modding techniques such as animation swapping.</p>
                 <h3>Prioritization</h3>
                 <p>I prioritized tasks by difficulty. I prioritized a lot of my difficult tasks first because there was always the chance that I wouldn't get something working by the end of a given workplan. This worked out as I was able to get the features that I really wanted to implement to work.</p>
-                
             </template>
             <template v-slot:strugglesAndTriumphs>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque adipisci nesciunt distinctio consectetur
-                    quisquam consequatur, corrupti reiciendis ex aut quibusdam minima quidem earum quod architecto deserunt
-                    a, commodi debitis! Ducimus.</p>
+                <h3>Triumps</h3>
+                <ul>
+                    <li>I gave Shulk new moves and features.</li>
+                    <li>I learned a lot about game modding.</li>
+                    <li>I </li>
+                </ul>
             </template>
             <template v-slot:links>
                 <a href="https://www.google.com">google</a>
