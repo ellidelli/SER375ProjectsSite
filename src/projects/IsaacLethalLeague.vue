@@ -35,9 +35,9 @@
   
 <script>
 import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
-import sampleImage from '../projects/project_images/ProjectSampleImage.jpeg'
-import sampleImage2 from '../projects/project_images/1.png';
-// import sampleVideo from '../projects/project_videos/<VIDEO TITLE>'
+import screen1 from '../projects/project_images/screen1.jpg'
+import screen2 from '../projects/project_images/screen2.jpg'
+import video1 from '../projects/project_videos/video1.mp4';
 
 export default {
   name: 'IsaacLethalLeague',
@@ -48,8 +48,8 @@ export default {
     return {
       projectTitle: "Isaac Lethal League",
       author: "Marcus Ferreira",
-      pictures: [sampleImage, sampleImage2],
-      video: "sampleVideo" //get rid of the quotes when putting in your video variable
+      pictures: [screen1, screen2],
+      video: video1 //get rid of the quotes when putting in your video variable
     }
   },
   info: {
