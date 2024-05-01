@@ -47,15 +47,31 @@
                 <p>I prioritized tasks by difficulty. I prioritized a lot of my difficult tasks first because there was always the chance that I wouldn't get something working by the end of a given workplan. This worked out as I was able to get the features that I really wanted to implement to work.</p>
             </template>
             <template v-slot:strugglesAndTriumphs>
-                <h3>Triumps</h3>
-                <ul>
-                    <li>I gave Shulk new moves and features.</li>
-                    <li>I learned a lot about game modding.</li>
-                    <li>I </li>
-                </ul>
+                <h3>Triumphs</h3>
+                <p>
+                    <ul>
+                        <li>I gave Shulk new moves and features.</li>
+                        <li>I learned a lot about game modding.</li>
+                        <li>I learned a lot about programming in Rust.</li>
+                    </ul>
+                </p>
+                <h3>Strugles</h3>
+                <p>
+                    <ul>
+                        <li>The API's for interacting with game code were difficult to use.</li>
+                        <li>Firmware updates often made it difficult to maintain the functionality of the project.</li>
+                        <li>The amount of time it takes to reboot the game with updated code made the debugging process difficult.</li>
+                    </ul>
+                </p>
             </template>
             <template v-slot:links>
-                <a href="https://www.google.com">google</a>
+                <a href="https://github.com/jpmason64/HDR-Shulk-Rework">Github</a>
+                <a href="https://www.youtube.com/watch?v=02NaFwNcC3M&list=PLJ8C0Hk2ZKHvxjfFylRUIbVnDUvxLdejh">Smash Ultimate Modding Workshop</a>
+                <a href="https://discord.gg/hdr">HDR Discord</a>
+                <a href="https://discord.gg/ASJyTrZ">Smash Ultimate Modding Discord</a>
+                <a href="https://raw.githubusercontent.com/ultimate-research/param-labels/master/ParamLabels.csv">Param Tables</a>
+                <a href="https://docs.google.com/spreadsheets/d/1q_TpWoQkr9YWgQ7fc3JpHuU9zKfCLtl80Uodcyc0NPY/edit#gid=0">Animation Labels</a>
+                <a href="https://github.com/WuBoytH/SSBU-Dumped-Scripts">Smash Ultimate Script Dumps</a>
             </template>
         </oneColumnTemplate>
     </div>
@@ -82,7 +98,7 @@ export default {
     info: {
         title: 'HDR Shulk Rework',
         author: 'Jonathan Mason',
-        tags: ["Sample", "Templates", "Open Source", "Help"]
+        tags: ["Super Smash Bros. Ultimate", "Open Source", "Game Modding", "Shulk", "Xenoblade", "Rust", "Skyline", "Smashline", "Switch Modding"]
     }
 }
 </script>
