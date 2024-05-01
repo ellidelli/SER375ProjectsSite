@@ -89,6 +89,7 @@ img {
   max-width: 100%;
   max-height: 90vh;
 }
+
 video {
   padding-bottom: 5vh;
   max-width: 100%;
