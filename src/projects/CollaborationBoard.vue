@@ -18,12 +18,18 @@
                     One of the first challenges we faced was properly maintaining the state information between different components in React without accidentally recreating the WebSocket. This was a problem because when updating state information in React, the whole component will re-render. As a result, we would often lose our WebSocket connection, as the re-render would attempt to recreate a new WebSocket on top of the existing one. This caused issues with data duplication and loss, so we had to use a combination of React states, refs, and effects to properly manage the re-renders. We found that states always forced a render, refs never re-render, and effects conditionally re-render when one of the dependencies updates, so we placed the WebSockets in a ref and the data in states, and then added the WebSocket listeners in an effect so that the functionality would adapt to changes in the application data. Once we had this properly configured, we could then pass states and refs between components, allowing data to be shared across the application.
                     <br><br>
                     Another struggle that we ran into was related to dragging and dropping elements in React. We had started by trying to implement drag-and-drop functionality on our own but found that it was a much more complicated task than we had initially perceived. To simplify the development process, we decided to look for a package to handle dragging instead, specifically using react-draggable, as it was the most used package for dragging. After experimenting with react-draggable, we found that it caused some issues with not properly updating the location of cards once dropped, so we went back to exploring for open-source packages to resolve the issue, this time searching for a solution that supported both dragging and dropping. Eventually we settled on using react-dnd, as it had built-in drag and drop listeners that fired events that we could easily use to send messages to reorder cards on the backend.
+                    <br><br>
+                    The final challenge that we faced this semester was with our database design. We initially began with a relational database using PostgreSQL, and this worked for a system with only cards, columns, and chat messages with a minimal number of joins between tables. However, as we planned to add more features to the cards, it became more challenging to keep track of all the relevant pieces of information for that card. When we began implementing the checklist items on cards, we decided that it would be more effective to switch to a non-relational database so that we could allocate separate documents for each card with the column, tasks, and messages all stored in a single location. This minimized the number of queries necessary on the backend when rendering cards and chats and made it much easier to add new data to cards in the future.
                 </p>
             </template>
             <template v-slot:links>
+                <a href="https://github.com/mattcmerritt/Collaboration-Board">GitHub Repository</a>
                 <a href="https://react.dev/reference/react">React Documentation</a>
                 <a href="https://tailwindcss.com/docs/installation">Tailwind CSS Documentation</a>
+                <a href="https://www.mongodb.com/docs/drivers/node/current/">MongoDB Documentation</a>
                 <a href="https://react-dnd.github.io/react-dnd/docs/tutorial">React DnD Tutorial</a>
+                <a href="https://developer.mozilla.org/docs/Web/API/WebSocket">WebSocket API (Frontend)</a>
+                <a href="https://github.com/websockets/ws?tab=readme-ov-file#api-docs">WebSocket Library (Backend)</a>
             </template>
         </oneColumnTemplate>
     </div>
@@ -52,7 +58,7 @@ export default {
     info: {
         title: 'Collaboration Board',
         author: 'Matthew Merritt and Michael Merritt',
-        tags: ["React", "Next.js", "TypeScript", "JavaScript", "Full-stack", "Frontend", "Backend", "MongoDB", "WebSockets", "Real-time Chat", "Kanban Board", "react-dnd"]
+        tags: ["React", "Next.js", "TypeScript", "JavaScript", "Full-stack", "Frontend", "Backend", "MongoDB", "WebSockets", "Real-time Chat", "Kanban Board", "react-dnd", "Spring 2024", "Open Source"]
     }
 }
 </script>
