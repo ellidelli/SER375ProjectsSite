@@ -98,5 +98,6 @@ h1 {
 video {
     width: 70%;
     padding-bottom: 10vh;
+    max-height: 90vh;
 }
 </style>
