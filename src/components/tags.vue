@@ -29,30 +29,21 @@ export default {
             tagCounts: {},
             // colors: ["#7473BF", "#6767A3", "#5A5A87", "#4D4E6B", "#46485D", "#434556", "#3F414E"],
             colors: [
-                "#FFC0CB", // Pink
-                "#FF69B4", // Hot Pink
-                "#FFB6C1", // Light Pink
-                "#FF1493", // Deep Pink
-                "#FF7F50", // Coral
-                "#FFA07A", // Light Salmon
-                "#FF6347", // Tomato
-                "#FF4500", // Orange Red
-                "#FFD700", // Gold
-                "#FFA500", // Orange
-                "#FF8C00", // Dark Orange
-                "#FFDAB9", // Peachpuff
-                "#FFA07A", // Light Salmon
-                "#FA8072", // Salmon
-                "#FFB6C1", // Light Pink
-                "#FFAEB9", // Blush
-                "#FFE4E1", // Misty Rose
-                "#FFDAB9", // Peachpuff
-                "#FFA07A", // Light Salmon
-                "#FFB6C1", // Light Pink
-                "#F08080", // Light Coral
-                "#FF4500", // Orange Red
-                "#FF6347", // Tomato
-                "#FF0000"  // Red
+                "#E6E6FA", // Lavender
+                "#D8BFD8", // Thistle
+                "#DDA0DD", // Plum
+                "#BA55D3", // Medium Orchid
+                "#9370DB", // Medium Purple
+                "#8A2BE2", // Blue Violet
+                "#6A5ACD", // Slate Blue
+                "#483D8B", // Dark Slate Blue
+                "#778899", // Light Slate Gray
+                "#708090", // Slate Gray
+                "#2F4F4F", // Dark Slate Gray
+                "#696969", // Dim Gray
+                "#808080", // Gray
+                "#A9A9A9", // Dark Gray
+                "#D3D3D3"  // Light Gray
             ],
             searchResults: null,
             searchTerm: '',
