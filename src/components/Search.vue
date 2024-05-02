@@ -117,6 +117,16 @@ export default {
     padding-bottom: 20vh;
 }
 
+.allButton {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    margin-top: 2vh;
+    /* Adjust margin-top as needed */
+}
+
 .allButton>button {
     text-decoration: none;
     color: white;
