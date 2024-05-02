@@ -50,6 +50,8 @@
             </template>
             <template v-slot:links>
                 <div style="padding-bottom: 10vh;">
+                    <a href="https://shanbrick.github.io/Bias-Sorter/">The Website!!!</a><br>
+                    <a href="https://github.com/shanbrick/Bias-Sorter">Github Repo</a><br>
                     <a href="https://chromewebstore.google.com/detail/sheets-to-json/enmkalgdnmcaljdfkojckdbhkjmffmoa">Spreadsheet
                         to JSON - Google Sheet Extension</a><br>
                     <a href="https://www.w3schools.com">Lots of HTML, CSS, JS formatting help!!!</a><br>
@@ -68,7 +70,7 @@ import home from '../projects/project_images/BrickettHome.png';
 import list from '../projects/project_images/BrickettList.png';
 import groups from '../projects/project_images/BrickettGroups.png';
 import birthdays from '../projects/project_images/BrickettBirthday.png';
-// import sampleVideo from '../projects/project_videos/<VIDEO TITLE>'
+import demoVideo from '../projects/project_videos/BrickettDemo.mp4';
 
 export default {
     name: 'BiasSorter',
@@ -80,7 +82,7 @@ export default {
             projectTitle: "Bias Sorter",
             author: "Shannon Brickett",
             pictures: [home, list, groups, birthdays],
-            video: "sampleVideo" //get rid of the quotes when putting in your video variable
+            video: demoVideo
         }
     },
     info: {
