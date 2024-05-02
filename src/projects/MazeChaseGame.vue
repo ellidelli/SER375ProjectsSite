@@ -77,7 +77,7 @@ export default {
   info: {
     title: "Maze Chase Game",
     author: "Jay Salgado",
-    tags: ["Unity", "Websockets", "React.js", "Express.js", "C#","Netcode for gameobjects", "Open Source", "Multiplayer Game"],
+    tags: ["Unity", "Websockets", "React.js", "Express.js", "C#","Netcode for gameobjects", "Open Source", "Multiplayer Game", "Spring 2024"],
   },
 };
 </script>
