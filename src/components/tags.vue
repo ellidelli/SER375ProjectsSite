@@ -29,30 +29,18 @@ export default {
             tagCounts: {},
             // colors: ["#7473BF", "#6767A3", "#5A5A87", "#4D4E6B", "#46485D", "#434556", "#3F414E"],
             colors: [
-                "#FFC0CB", // Pink
-                "#FF69B4", // Hot Pink
-                "#FFB6C1", // Light Pink
-                "#FF1493", // Deep Pink
-                "#FF7F50", // Coral
-                "#FFA07A", // Light Salmon
-                "#FF6347", // Tomato
-                "#FF4500", // Orange Red
-                "#FFD700", // Gold
-                "#FFA500", // Orange
-                "#FF8C00", // Dark Orange
-                "#FFDAB9", // Peachpuff
-                "#FFA07A", // Light Salmon
-                "#FA8072", // Salmon
-                "#FFB6C1", // Light Pink
-                "#FFAEB9", // Blush
-                "#FFE4E1", // Misty Rose
-                "#FFDAB9", // Peachpuff
-                "#FFA07A", // Light Salmon
-                "#FFB6C1", // Light Pink
-                "#F08080", // Light Coral
-                "#FF4500", // Orange Red
-                "#FF6347", // Tomato
-                "#FF0000"  // Red
+                "#7473BF", // Original color: Blueish
+                "#4E5D92", // Darker Blue
+                "#A0A7D0", // Lighter Blue
+                "#4D71A3", // Blue with Cyan Hue
+                "#6A579E", // Deeper Blue with Purple Hue
+                "#6E88C4", // Lighter Blue with Cyan Hue
+                "#3C6C8F", // Darker Blue with Grayish Tone
+                "#497ABD", // Darker Blue with Cyan Hint
+                "#7BA1C8", // Lighter Blue with Cyan Hint
+                "#366E8A", // Darker Blue with Green Hint
+                "#88A7CF", // Lighter Blue with Green Hint
+                "#3F678B"  // Darker Blue with Grayish Tone
             ],
             searchResults: null,
             searchTerm: '',
@@ -62,6 +50,14 @@ export default {
     },
     created() {
         this.projectData = getProjects()
+        // Check if the flag is set in local storage
+        const clearLocalStorageFlag = localStorage.getItem('clearLocalStorageFlag');
+
+        // If the flag is not set, clear local storage and set the flag
+        if (!clearLocalStorageFlag) {
+            localStorage.clear();
+            localStorage.setItem('clearLocalStorageFlag', true);
+        }
     },
     mounted() {
         this.getAllTags();
