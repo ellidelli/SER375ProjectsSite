@@ -1,4 +1,3 @@
-<!-- SearchBar.vue -->
 <template>
     <div class="search-container">
         <input type="text" v-model="searchTerm" placeholder="Search a project or an author..." class="searchbar"
@@ -6,6 +5,9 @@
         <button type="button" @click="search()" class="search-button">
             <img src="@/assets/searchIcon.png" alt="">
         </button>
+    </div>
+    <div class="allButton">
+        <button type="button" @click="showAllProjects" class="show-all-button">Show All Projects</button>
     </div>
     <div class="results-container" v-if="searchResults && searchResults.length > 0">
         <h1>Results</h1>
@@ -28,36 +30,49 @@ export default {
         };
     },
     created() {
-        this.projectData = getProjects()
         if (this.$route.query.query) {
-            this.searchTerm = this.$route.query.query
-            this.search()
+            this.searchTerm = this.$route.query.query;
+            this.search();
         }
     },
     methods: {
         search() {
             if (!this.searchTerm) {
-                return
+                return;
             }
-            this.$router.replace({ path: this.$route.path, query: { ...this.$route.query, query: this.searchTerm ? this.searchTerm : undefined } })
-                .catch(() => { })
-                .finally(() => {
-                    const query = this.searchTerm.toLowerCase()
-                    const matches = []
-                    const cache = new Set()
-                    this.projectData.projects.forEach(project => {
-                        const heading = project.header;
-                        if (heading.title.toLowerCase().includes(query) || heading.author.toLowerCase().includes(query)) {
-                            const display = `${heading.title}-${heading.author}`;
-                            if (!cache.has(display)) {
-                                matches.push({ Title: heading.title, Author: heading.author, display })
-                                cache.add(display)
-                            }
-                        }
-                    });
-                    matches.sort((a, b) => (a.display > b.display) ? 1 : -1)
-                    this.searchResults = matches
-                })
+            const query = this.searchTerm.toLowerCase();
+            const matches = [];
+            const cache = new Set();
+            const projectData = getProjects(); // Fetch all projects
+            projectData.projects.forEach(project => {
+                const heading = project.header;
+                if (heading.title.toLowerCase().includes(query) || heading.author.toLowerCase().includes(query)) {
+                    const display = `${heading.title}-${heading.author}`;
+                    if (!cache.has(display)) {
+                        matches.push({ Title: heading.title, Author: heading.author, display });
+                        cache.add(display);
+                    }
+                }
+            });
+            matches.sort((a, b) => (a.display > b.display) ? 1 : -1);
+            this.searchResults = matches;
+        },
+        showAllProjects() {
+            const matches = [];
+            const cache = new Set();
+            const projectData = getProjects(); // Fetch all projects
+            projectData.projects.forEach(project => {
+                const heading = project.header;
+                if (heading.title.toLowerCase() || heading.author.toLowerCase()) {
+                    const display = `${heading.title}-${heading.author}`;
+                    if (!cache.has(display)) {
+                        matches.push({ Title: heading.title, Author: heading.author, display });
+                        cache.add(display);
+                    }
+                }
+            });
+            matches.sort((a, b) => (a.display > b.display) ? 1 : -1);
+            this.searchResults = matches;
         },
     },
     components: {
@@ -100,6 +115,23 @@ export default {
 .results-container {
     background-color: rgb(32, 33, 38);
     padding-bottom: 20vh;
+}
+
+.allButton>button {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins";
+    background-color: #7473BF;
+    padding: .7rem;
+    border: none;
+    border-radius: 1rem;
+    margin-bottom: 5vh;
+    font-weight: 500;
+}
+
+.allButton>button:hover {
+    background-color: #5d5b99;
+    transition: background-color 0.3s ease-in-out;
 }
 
 button>img {
