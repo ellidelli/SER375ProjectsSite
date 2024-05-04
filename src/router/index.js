@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import DiscoverView from '../views/DiscoverView.vue'
-import twoColumnTemplateVue from '@/components/templates/twoColumnTemplate.vue'
+import BrowseView from '../views/BrowseView.vue'
 import Project from '../views/Project.vue'
 import TagView from '../views/TagView.vue'
 
@@ -15,6 +15,11 @@ const routes = [
     path: '/discover',
     name: 'discover',
     component: DiscoverView
+  },
+  {
+    path: '/browse',
+    name: 'browse',
+    component: BrowseView
   },
   {
     path: '/projects/:projectTitle',

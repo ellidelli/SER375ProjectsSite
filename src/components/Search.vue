@@ -6,9 +6,6 @@
             <img src="@/assets/searchIcon.png" alt="">
         </button>
     </div>
-    <div class="allButton">
-        <button type="button" @click="showAllProjects" class="show-all-button">Show All Projects</button>
-    </div>
     <div class="results-container" v-if="searchResults && searchResults.length > 0">
         <h1>Results</h1>
         <search-result v-for="searchResult in searchResults" :key="searchResult.display" :title="searchResult.Title"
@@ -56,24 +53,7 @@ export default {
             });
             matches.sort((a, b) => (a.display > b.display) ? 1 : -1);
             this.searchResults = matches;
-        },
-        showAllProjects() {
-            const matches = [];
-            const cache = new Set();
-            const projectData = getProjects(); // Fetch all projects
-            projectData.projects.forEach(project => {
-                const heading = project.header;
-                if (heading.title.toLowerCase() || heading.author.toLowerCase()) {
-                    const display = `${heading.title}-${heading.author}`;
-                    if (!cache.has(display)) {
-                        matches.push({ Title: heading.title, Author: heading.author, display });
-                        cache.add(display);
-                    }
-                }
-            });
-            matches.sort((a, b) => (a.display > b.display) ? 1 : -1);
-            this.searchResults = matches;
-        },
+        }
     },
     components: {
         SearchResult,
@@ -114,7 +94,14 @@ export default {
 
 .results-container {
     background-color: rgb(32, 33, 38);
-    padding-bottom: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 50px;
 }
 
 .allButton {
@@ -159,8 +146,8 @@ button>img:hover {
 }
 
 h1 {
-    margin-bottom: 2vh;
-    margin-top: 2vh;
+    margin-bottom: 5px;
+    margin-top: 5px;
     font-size: x-large;
 }
 </style>
