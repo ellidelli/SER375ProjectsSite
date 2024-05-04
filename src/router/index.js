@@ -4,6 +4,7 @@ import DiscoverView from '../views/DiscoverView.vue'
 import BrowseView from '../views/BrowseView.vue'
 import Project from '../views/Project.vue'
 import TagView from '../views/TagView.vue'
+import TagProjectDisplay from '../views/TagProjectDisplay.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/tags',
     name: 'ProjectTags',
     component: TagView
+  },
+  {
+    path: '/tags/:tag',
+    name: 'ProjectTag',
+    component: TagProjectDisplay
   }
 ]
 
