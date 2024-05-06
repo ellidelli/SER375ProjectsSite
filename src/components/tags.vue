@@ -1,17 +1,12 @@
 <template>
-    <h1>Search for a tag.</h1>
+    <h1>Project Tags</h1>
     <div class="search-container">
-        <input type="text" v-model="searchTerm" placeholder="Search tags..." class="searchbar">
+        <input type="text" v-model="searchTerm" v-on:input="onFilter" placeholder="Filter tags..." class="searchbar">
     </div>
     <div class="tag-container">
         <h4 v-for="tag in filteredTags" :key="tag" :style="{ backgroundColor: getTagColor(tag) }" @click="openResults(tag)"
             class="tagButton">
             {{ tag }} ({{ tagCounts[tag] || 0 }}) </h4>
-    </div>
-    <div class="results-container" v-if="searchResults && searchResults.length > 0">
-        <h1>Results</h1>
-        <search-result v-for="searchResult in searchResults" :key="searchResult.display" :title="searchResult.Title"
-            :author="searchResult.Author" :display="searchResult.display" />
     </div>
 </template>
   
@@ -50,6 +45,9 @@ export default {
     },
     created() {
         this.projectData = getProjects()
+        if (this.$route.query.query) {
+            this.searchTerm = this.$route.query.query
+        }
         // Check if the flag is set in local storage
         const clearLocalStorageFlag = localStorage.getItem('clearLocalStorageFlag');
 
@@ -88,30 +86,7 @@ export default {
             });
         },
         openResults(tag) {
-            console.log("clicked", tag);
-            this.searchTerm = tag;
-            if (!this.searchTerm) {
-                return;
-            }
-            const query = this.searchTerm.toLowerCase();
-            const matches = [];
-            const cache = new Set();
-            this.projectData.projects.forEach(project => {
-                const tags = project.header.tags.map(tag => tag.toLowerCase());
-                if (tags.includes(query)) {
-                    const display = `${project.header.title}-${project.header.author}`;
-                    if (!cache.has(display)) {
-                        matches.push({
-                            Title: project.header.title,
-                            Author: project.header.author,
-                            display
-                        });
-                        cache.add(display);
-                    }
-                }
-            });
-            matches.sort((a, b) => (a.display > b.display) ? 1 : -1);
-            this.searchResults = matches;
+            return this.$router.push(`/tags/${encodeURIComponent(tag)}`)
         },
         getTagColor(tag) {
             const storedColor = localStorage.getItem(`tagColor_${tag}`);
@@ -130,6 +105,10 @@ export default {
                     this.tagColors[tag] = storedColor;
                 }
             });
+        },
+        onFilter() {
+            return this.$router.replace({ path: this.$route.path, query: { ...this.searchTerm ? { query: this.searchTerm } : {} }})
+                .catch(() => {})
         }
     },
     computed: {
@@ -203,6 +182,7 @@ h4 {
 .tagButton:hover {
     transition: color 0.3s;
     color: rgb(28 29 33);
+    cursor: pointer;
 }
 
 h1 {

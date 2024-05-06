@@ -21,8 +21,8 @@ export const getProjects = () => {
   return { projects }
 }
 
-// Creates a JSON map consisting of all project page vue components
-// Can be used for dynamically loading all projects as components for another Vue component
+// retrieves a Vue component for a project based
+// can be used for loading in a component dynamically into another Vue file
 export const getProjectComponent = (projectName) => {
   const vueFileNames = getAllProjectFileNames()
   const selectedFileName = vueFileNames.find(vueFileName => vueFileName.slice(2, -4).replaceAll(' ', '').toLowerCase() === projectName)
