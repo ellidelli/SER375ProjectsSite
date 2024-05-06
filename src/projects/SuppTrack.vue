@@ -26,7 +26,7 @@
 import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
 import SupptrackImage2 from '../projects/project_images/SupptrackImage2.png';
 import SupptrackImage3 from '../projects/project_images/SupptrackImage3.png';
-
+import SupptrackVideo from '../projects/project_videos/supptrack.MP4';
 
 export default {
     name: 'SuppTrack',
@@ -37,7 +37,7 @@ export default {
         return {
             projectTitle: "SuppTrack",
             author: "Taylor Lea",
-            pictures: [SupptrackImage1, SupptrackImage2, SupptrackImage3],
+            pictures: [SupptrackImage2, SupptrackImage3],
             video: SupptrackVideo
         }
     },
