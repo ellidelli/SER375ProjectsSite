@@ -3,15 +3,19 @@
     <img :src=randomBackground() alt="Background" class="bg">
     <div class="content">
       <h1>Open Source Development Projects</h1>
-      <p>A collection of projects from Quinnipiac’s Open Source Development course.</p>
+      <p>A collection of projects from Quinnipiac's Open Source Development course.</p>
     </div>
     <div class="secondContent">
       <h1>What is SER375?</h1>
-      <p>SER375 is the open source development course at Quinnipiac University, taught by Alex Thimineur. This course
-        introduces students into the world of open-source development, which includes subject matter such as how the
-        open-source community operates, expanding on existing projects, and how to properly use and manage all resources
-        available to computer scientists in order to create large-scale applications, even those outside of an existing
-        comfort zone. Each student in this course has a unique project, which can be found on this site. </p>
+      <p class="description">
+        SER375 is the Open-Source Development course taught by Professor Alex Thimineur at Quinnipiac University. 
+        This course introduces students into the world of open-source development, 
+        which includes subject matter such as how the open-source community operates, 
+        expanding on existing projects, and how to properly use and manage all resources available to computer scientists in order to create large-scale applications,
+        including those outside of a developer's existing comfort zone. 
+        Each student in this course has a unique project, which can be found on this site. 
+        This site itself was a project created in this course by Elizabeth Delea.
+      </p>
     </div>
   </div>
 </template>
@@ -48,7 +52,7 @@ export default {
   filter: brightness(60%) blur(30px);
   z-index: -1;
   object-fit: cover;
-  width: 100vw;
+  width: 100%;
   height: 75vh;
 }
 
@@ -62,9 +66,21 @@ export default {
 }
 
 .secondContent {
-  padding: 15vh 10vw 25vh 10vw;
+  /* padding: 15vh 10vw 25vh 10vw; */
+  padding-top: 100px;
+  padding-bottom: 100px;
   /* top right bottom left */
   background-color: rgb(32, 33, 38);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  text-align: left;
+  text-indent: 50px;
+  max-width: 800px;
 }
 
 h1,
