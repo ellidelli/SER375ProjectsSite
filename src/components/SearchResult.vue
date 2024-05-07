@@ -3,7 +3,7 @@
     <router-link :to="projectRoute" class="search-result">
         <div class="result-info">
             <h3>{{ title }}</h3>
-            <p>by {{ author }}</p>
+            <p>{{ author }}</p>
         </div>
     </router-link>
 </template>
@@ -29,20 +29,21 @@ export default {
 <style scoped>
 .search-result {
     display: block;
-    margin-bottom: 5vh;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    width: 100%;
+    max-width: 800px;
     padding: 10px;
-    /* border: 1px solid #000; */
-    border-radius: 5px;
+    border-radius: 20px;
+    outline: 1px solid #000;
+    outline-offset: -6px;
+    
     text-decoration: none;
     color: rgb(247, 247, 247);
     transition: background-color 0.3s;
-    background-color: rgb(58, 60, 69);
+    background-color: rgb(54, 110, 138)
 }
 
 .search-result:hover {
-    background-color: rgb(47, 48, 56);
+    background-color: rgb(102, 175, 211)
 }
 
 .result-info {

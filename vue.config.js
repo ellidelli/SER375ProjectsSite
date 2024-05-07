@@ -7,7 +7,7 @@ module.exports = defineConfig({
     // Rule for video files
     config.module
       .rule("videos")
-      .test(/\.(mov|mp4)$/)
+      .test(/\.(mov)$/)
       .use("file-loader")
       .loader("file-loader")
       .options({

@@ -40,8 +40,8 @@
   
 <script>
 import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
-// import sampleImage from '/Users/shankaryellure/Desktop/SER375ProjectsSite/src/projects/project_images/Home.png';
-// import sampleVideo from '/Users/shankaryellure/Desktop/SER375ProjectsSite/src/projects/project_videos/Final Output .mp4'; // Example path, adjust as needed
+import sampleImage from "../projects/project_images/HealthCare.png";
+import sampleVideo from "../projects/project_videos/HealthCare.mp4";
 
 export default {
   name: 'HealthCare',
@@ -52,8 +52,8 @@ export default {
     return {
       projectTitle: "HealthCare",
       author: "Shankar Yellure",
-      pictures: ["sampleImage"],
-      video: "sampleVideo" // get rid of the quotes when putting in your video variable
+      pictures: [sampleImage],
+      video: sampleVideo // get rid of the quotes when putting in your video variable
     }
   },
   info: {

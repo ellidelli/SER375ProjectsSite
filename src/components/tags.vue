@@ -1,17 +1,12 @@
 <template>
-    <h1>Search for a tag.</h1>
+    <h1>Project Tags</h1>
     <div class="search-container">
-        <input type="text" v-model="searchTerm" placeholder="Search tags..." class="searchbar">
+        <input type="text" v-model="searchTerm" v-on:input="onFilter" placeholder="Filter tags..." class="searchbar">
     </div>
     <div class="tag-container">
         <h4 v-for="tag in filteredTags" :key="tag" :style="{ backgroundColor: getTagColor(tag) }" @click="openResults(tag)"
             class="tagButton">
             {{ tag }} ({{ tagCounts[tag] || 0 }}) </h4>
-    </div>
-    <div class="results-container" v-if="searchResults && searchResults.length > 0">
-        <h1>Results</h1>
-        <search-result v-for="searchResult in searchResults" :key="searchResult.display" :title="searchResult.Title"
-            :author="searchResult.Author" :display="searchResult.display" />
     </div>
 </template>
   
@@ -29,30 +24,18 @@ export default {
             tagCounts: {},
             // colors: ["#7473BF", "#6767A3", "#5A5A87", "#4D4E6B", "#46485D", "#434556", "#3F414E"],
             colors: [
-                "#FFC0CB", // Pink
-                "#FF69B4", // Hot Pink
-                "#FFB6C1", // Light Pink
-                "#FF1493", // Deep Pink
-                "#FF7F50", // Coral
-                "#FFA07A", // Light Salmon
-                "#FF6347", // Tomato
-                "#FF4500", // Orange Red
-                "#FFD700", // Gold
-                "#FFA500", // Orange
-                "#FF8C00", // Dark Orange
-                "#FFDAB9", // Peachpuff
-                "#FFA07A", // Light Salmon
-                "#FA8072", // Salmon
-                "#FFB6C1", // Light Pink
-                "#FFAEB9", // Blush
-                "#FFE4E1", // Misty Rose
-                "#FFDAB9", // Peachpuff
-                "#FFA07A", // Light Salmon
-                "#FFB6C1", // Light Pink
-                "#F08080", // Light Coral
-                "#FF4500", // Orange Red
-                "#FF6347", // Tomato
-                "#FF0000"  // Red
+                "#7473BF", // Original color: Blueish
+                "#4E5D92", // Darker Blue
+                "#A0A7D0", // Lighter Blue
+                "#4D71A3", // Blue with Cyan Hue
+                "#6A579E", // Deeper Blue with Purple Hue
+                "#6E88C4", // Lighter Blue with Cyan Hue
+                "#3C6C8F", // Darker Blue with Grayish Tone
+                "#497ABD", // Darker Blue with Cyan Hint
+                "#7BA1C8", // Lighter Blue with Cyan Hint
+                "#366E8A", // Darker Blue with Green Hint
+                "#88A7CF", // Lighter Blue with Green Hint
+                "#3F678B"  // Darker Blue with Grayish Tone
             ],
             searchResults: null,
             searchTerm: '',
@@ -62,6 +45,17 @@ export default {
     },
     created() {
         this.projectData = getProjects()
+        if (this.$route.query.query) {
+            this.searchTerm = this.$route.query.query
+        }
+        // Check if the flag is set in local storage
+        const clearLocalStorageFlag = localStorage.getItem('clearLocalStorageFlag');
+
+        // If the flag is not set, clear local storage and set the flag
+        if (!clearLocalStorageFlag) {
+            localStorage.clear();
+            localStorage.setItem('clearLocalStorageFlag', true);
+        }
     },
     mounted() {
         this.getAllTags();
@@ -92,30 +86,7 @@ export default {
             });
         },
         openResults(tag) {
-            console.log("clicked", tag);
-            this.searchTerm = tag;
-            if (!this.searchTerm) {
-                return;
-            }
-            const query = this.searchTerm.toLowerCase();
-            const matches = [];
-            const cache = new Set();
-            this.projectData.projects.forEach(project => {
-                const tags = project.header.tags.map(tag => tag.toLowerCase());
-                if (tags.includes(query)) {
-                    const display = `${project.header.title}-${project.header.author}`;
-                    if (!cache.has(display)) {
-                        matches.push({
-                            Title: project.header.title,
-                            Author: project.header.author,
-                            display
-                        });
-                        cache.add(display);
-                    }
-                }
-            });
-            matches.sort((a, b) => (a.display > b.display) ? 1 : -1);
-            this.searchResults = matches;
+            return this.$router.push(`/tags/${encodeURIComponent(tag)}`)
         },
         getTagColor(tag) {
             const storedColor = localStorage.getItem(`tagColor_${tag}`);
@@ -134,6 +105,10 @@ export default {
                     this.tagColors[tag] = storedColor;
                 }
             });
+        },
+        onFilter() {
+            return this.$router.replace({ path: this.$route.path, query: { ...this.searchTerm ? { query: this.searchTerm } : {} }})
+                .catch(() => {})
         }
     },
     computed: {
@@ -207,6 +182,7 @@ h4 {
 .tagButton:hover {
     transition: color 0.3s;
     color: rgb(28 29 33);
+    cursor: pointer;
 }
 
 h1 {

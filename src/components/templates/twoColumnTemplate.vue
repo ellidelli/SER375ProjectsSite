@@ -19,7 +19,7 @@
                     <img :src="picture" alt="Project Image">
                 </div>
                 <div v-if="pictures.length <= 1" class="videoSide">
-                    <video :src="video" controls></video>
+                    <video :src="video" controls type="video/mp4"></video>
                 </div>
             </div>
 

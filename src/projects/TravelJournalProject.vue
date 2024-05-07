@@ -8,17 +8,22 @@
             </template>
             <template v-slot:description>
                 <p>This is an apple app that gives users the opportunity to save memories about where they have traveled to
-                 and their favorite memories. Users also have the ability to search resturants around them and see information 
-                 on each resturant. </p>
+                    and their favorite memories. Users also have the ability to search resturants around them and see
+                    information
+                    on each resturant. </p>
             </template>
             <template v-slot:story>
-                <p>I have a passion for traveling but I often find myself forgetting important memories and my favorite places that I visited.
-                I wanted to create this app to help keep track of places that I have traveled to and amazing memories that I have made there. </p>
+                <p>I have a passion for traveling but I often find myself forgetting important memories and my favorite
+                    places that I visited.
+                    I wanted to create this app to help keep track of places that I have traveled to and amazing memories
+                    that I have made there. </p>
             </template>
             <template v-slot:strugglesAndTriumphs>
-                <p>Before creating this app I had no background on Xcode or swift. This project helped me to learn Swift as well as using Xcode. 
-                I wanted to challenge myself by adding in an API to learn how these work in Swift and Xcode. This was a great opportunity to learn 
-                a new language and be able to work with open source projects. </p>
+                <p>Before creating this app I had no background on Xcode or swift. This project helped me to learn Swift as
+                    well as using Xcode.
+                    I wanted to challenge myself by adding in an API to learn how these work in Swift and Xcode. This was a
+                    great opportunity to learn
+                    a new language and be able to work with open source projects. </p>
             </template>
             <template v-slot:links>
                 <div style="padding-bottom: 10vh;">
@@ -62,7 +67,7 @@ export default {
                 }
                 //,
                 //{
-                   // image: two
+                // image: two
                 //},
                 //{
                 //    image: three
@@ -107,5 +112,4 @@ p {
 
 h1 {
     padding-bottom: 2vh;
-}
-</style>
+}</style>

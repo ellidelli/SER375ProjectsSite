@@ -1,17 +1,13 @@
-<!-- SearchBar.vue -->
 <template>
     <div class="search-container">
-        <input type="text" v-model="searchTerm" placeholder="Search a project or an author..." class="searchbar"
-            @keyup.enter="search()">
-        <button type="button" @click="search()" class="search-button">
-            <img src="@/assets/searchIcon.png" alt="">
-        </button>
+        <input v-on:input="search" type="text" v-model="searchTerm" placeholder="Search a project or an author..." class="searchbar">
     </div>
     <div class="results-container" v-if="searchResults && searchResults.length > 0">
         <h1>Results</h1>
         <search-result v-for="searchResult in searchResults" :key="searchResult.display" :title="searchResult.Title"
             :author="searchResult.Author" :display="searchResult.display" />
     </div>
+    <p class="no-results-label" v-else-if="(!searchResults || searchResults.length === 0) && searchTerm !== ''">No Results</p>
 </template>
   
 <script>
@@ -25,40 +21,39 @@ export default {
             searchTerm: '',
             searchField: 'project',
             searchResults: null,
+            projects: []
         };
     },
-    created() {
-        this.projectData = getProjects()
+    mounted() {
+        this.projects = getProjects().projects
+        this.projects.sort((a, b) => (a.header.title.localeCompare(b.header.title)));
         if (this.$route.query.query) {
-            this.searchTerm = this.$route.query.query
-            this.search()
+            this.searchTerm = this.$route.query.query;
+            this.search();
         }
     },
     methods: {
         search() {
+            this.$router.replace({ path: this.$route.path, query: { ...this.searchTerm ? { query: this.searchTerm } : {} }}).catch(() => {})
             if (!this.searchTerm) {
+                this.searchResults = []
                 return
             }
-            this.$router.replace({ path: this.$route.path, query: { ...this.$route.query, query: this.searchTerm ? this.searchTerm : undefined } })
-                .catch(() => { })
-                .finally(() => {
-                    const query = this.searchTerm.toLowerCase()
-                    const matches = []
-                    const cache = new Set()
-                    this.projectData.projects.forEach(project => {
-                        const heading = project.header;
-                        if (heading.title.toLowerCase().includes(query) || heading.author.toLowerCase().includes(query)) {
-                            const display = `${heading.title}-${heading.author}`;
-                            if (!cache.has(display)) {
-                                matches.push({ Title: heading.title, Author: heading.author, display })
-                                cache.add(display)
-                            }
-                        }
-                    });
-                    matches.sort((a, b) => (a.display > b.display) ? 1 : -1)
-                    this.searchResults = matches
-                })
-        },
+            const query = this.searchTerm.toLowerCase();
+            const matches = [];
+            const cache = new Set();
+            this.projects.forEach(project => {
+                const heading = project.header;
+                if (heading.title.toLowerCase().includes(query) || heading.author.toLowerCase().includes(query)) {
+                    const display = `${heading.title}-${heading.author}`;
+                    if (!cache.has(display)) {
+                        matches.push({ Title: heading.title, Author: heading.author, display });
+                        cache.add(display);
+                    }
+                }
+            });
+            this.searchResults = matches;
+        }
     },
     components: {
         SearchResult,
@@ -71,13 +66,13 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 2vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .searchbar {
-    width: 40vw;
+    width: 500px;
     height: 30px;
-    margin-right: 10px;
     padding: 20px;
     font-family: "Poppins";
     border-radius: 20px;
@@ -85,21 +80,43 @@ export default {
     border: none;
 }
 
-.search-button {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
-    width: 3vw;
-    min-width: 30px;
-    height: 0;
-    padding-top: 10%;
-    position: relative;
-}
-
 .results-container {
     background-color: rgb(32, 33, 38);
-    padding-bottom: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+.allButton {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    margin-top: 2vh;
+    /* Adjust margin-top as needed */
+}
+
+.allButton>button {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins";
+    background-color: #7473BF;
+    padding: .7rem;
+    border: none;
+    border-radius: 1rem;
+    margin-bottom: 5vh;
+    font-weight: 500;
+}
+
+.allButton>button:hover {
+    background-color: #5d5b99;
+    transition: background-color 0.3s ease-in-out;
 }
 
 button>img {
@@ -117,8 +134,20 @@ button>img:hover {
 }
 
 h1 {
-    margin-bottom: 2vh;
-    margin-top: 2vh;
+    margin-bottom: 5px;
+    margin-top: 5px;
     font-size: x-large;
 }
+
+.no-results-label {
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 500px) {
+    .searchbar {
+        width: 90%;
+    }
+}
+
+
 </style>
