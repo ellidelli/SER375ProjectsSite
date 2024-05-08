@@ -2,13 +2,20 @@
     <div>
         <twoColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
             <template v-slot:description>
-                <p>Supptrack is an app for NCAA athletes and military personnel to monitor supplement ingredients. Users can scan barcodes of supplements and see if they are safe to use, get personalized plans, and discover new products.</p>
+                <p>Supptrack is an app for NCAA athletes and military personnel to monitor supplement ingredients. Users can
+                    scan barcodes of supplements and see if they are safe to use, get personalized plans, and discover new
+                    products.</p>
             </template>
             <template v-slot:story>
-                <p>Last semester I had a friend approach me and ask if I could make her an iOS app for a project that she and some classmates had been working on. At the time I knew nothing about iOS programming so I said no but I really liked the idea for the app so when given the opportunity to learn iOS and swift I decided to give it a try.</p>
+                <p>Last semester I had a friend approach me and ask if I could make her an iOS app for a project that she
+                    and some classmates had been working on. At the time I knew nothing about iOS programming so I said no
+                    but I really liked the idea for the app so when given the opportunity to learn iOS and swift I decided
+                    to give it a try.</p>
             </template>
             <template v-slot:strugglesAndTriumphs>
-                <p>I really enjoyed programming swift and I was able to pick it up pretty quickly. Working with the API to get a list of ingrdients to appear after scanning the barcode was definitely the biggest struggle and it took a few tries to get that right.</p>
+                <p>I really enjoyed programming swift and I was able to pick it up pretty quickly. Working with the API to
+                    get a list of ingrdients to appear after scanning the barcode was definitely the biggest struggle and it
+                    took a few tries to get that right.</p>
             </template>
             <template v-slot:links>
                 <div style="padding-bottom: 10vh;">
