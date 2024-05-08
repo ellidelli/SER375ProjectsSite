@@ -26,7 +26,7 @@
 import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
 import SupptrackImage2 from '../projects/project_images/SupptrackImage2.png';
 import SupptrackImage3 from '../projects/project_images/SupptrackImage3.png';
-import SupptrackVideo from '../projects/project_videos/supptrack.mp4';
+import SupptrackVideo from '../projects/project_videos/supptrackVideo.mp4';
 
 export default {
     name: 'SuppTrack',
