@@ -11,6 +11,10 @@
                     run faster, jump higher, do more damage, et cetera. These arts last for a
                     small period of time and take around 16-18 seconds to recharge.
                     I changed this functionality by making it so that hitting the opponent will reduce the recharge time.</p>
+                <h3>Hit Cancel With Monado Arts</h3>
+                <p>In the base game, it would normally have to wait until the move you were doing was finished before changing arts.
+                    This made it very difficult to change monado arts during a combo. I made it such that when you hit someone with a normal attack,
+                    you can use Shulk's monado arts to cancel the move that was happening. This allows Shulk players to do more complex combos.</p>
                 <h3>Forward Tilt Change</h3>
                 <p>Shulk's forward tilt attack as a simple swing in the original version of the game.
                     While the move is effective, it's missing a key feature that other characters have.
@@ -79,8 +83,9 @@
     
 <script>
 import oneColumnTemplate from '../components/templates/oneColumnTemplate.vue'
-import sampleImage from '../projects/project_images/ProjectSampleImage.jpeg';
-// import sampleVideo from '../projects/project_videos/<VIDEO TITLE>'
+import image_one from '../projects/project_images/monado_arts.jpg'
+import image_two from '../projects/project_images/monado_forward_tilt.jpg'
+import video from '../projects/project_videos/demo_smash_match.mp4'
 
 export default {
     name: 'HDRShulkRework',
@@ -91,8 +96,8 @@ export default {
         return {
             projectTitle: "HDR Shulk Rework",
             author: "Jonathan Mason",
-            pictures: [sampleImage, sampleImage],
-            video: "sampleVideo" //get rid of the quotes when putting in your video variable
+            pictures: [image_one, image_two],
+            video: video //get rid of the quotes when putting in your video variable
         }
     },
     info: {
