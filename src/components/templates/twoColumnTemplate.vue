@@ -10,15 +10,12 @@
                 <slot name="story"> </slot>
                 <h1>Struggles and Triumphs</h1>
                 <slot name="strugglesAndTriumphs"> </slot>
-                <div v-if="pictures.length > 1" class="videoSide">
-                    <video :src="video" controls></video>
-                </div>
             </div>
             <div class="right">
                 <div v-for="(picture, index) in pictures" :key="index">
                     <img :src="picture" alt="Project Image">
                 </div>
-                <div v-if="pictures.length <= 1" class="videoSide">
+                <div class="videoSide">
                     <video :src="video" controls type="video/mp4"></video>
                 </div>
             </div>
