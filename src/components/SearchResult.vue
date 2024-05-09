@@ -35,15 +35,15 @@ export default {
     border-radius: 20px;
     outline: 1px solid #000;
     outline-offset: -6px;
-    
+
     text-decoration: none;
     color: rgb(247, 247, 247);
     transition: background-color 0.3s;
-    background-color: rgb(54, 110, 138)
+    background-color: rgb(116, 115, 197)
 }
 
 .search-result:hover {
-    background-color: rgb(102, 175, 211)
+    background-color: rgb(93, 92, 158)
 }
 
 .result-info {
