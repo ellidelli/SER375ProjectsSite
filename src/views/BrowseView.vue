@@ -7,13 +7,8 @@
       <button class="page-button" @click="nextPage">&gt;</button>
     </div>
     <div class="projects">
-      <SearchResult 
-        v-for="project in getProjectsOnPage()" 
-        :key="project" 
-        :title="project.header.title" 
-        :author="project.header.author" 
-        :display="project.header.display" 
-      />
+      <SearchResult v-for="project in getProjectsOnPage()" :key="project" :title="project.header.title"
+        :author="project.header.author" :display="project.header.display" />
     </div>
     <div class="paging-container">
       <button class="page-button" @click="prevPage">&lt;</button>
@@ -78,14 +73,23 @@ export default {
       }
     },
     updatePageInQuery() {
-      return this.$router.replace({ path: this.$route.path, query: { page: this.page + 1 }})
-        .catch(() => {})
+      return this.$router.replace({ path: this.$route.path, query: { page: this.page + 1 } })
+        .catch(() => { })
     }
   }
 }
 </script>
 
 <style scoped>
+button {
+  font-family: 'Poppins';
+  font-weight: 600;
+  background-color: white;
+  color: rgb(116, 115, 197);
+  border-radius: 20px;
+  margin: 1rem;
+}
+
 .root {
   background-color: rgb(32, 33, 38);
   display: flex;
@@ -112,6 +116,13 @@ export default {
 .page-button {
   width: 40px;
   height: 20px;
+  border: none;
+}
+
+.page-button:hover {
+  background-color: rgb(116, 115, 197);
+  color: white;
+  transition: ease-in-out 0.2s;
 }
 
 .projects {
@@ -123,5 +134,4 @@ export default {
   width: 100%;
   padding: 10px;
 }
-
 </style>
