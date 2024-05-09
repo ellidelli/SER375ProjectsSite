@@ -3,13 +3,8 @@
         <h1>Selected Tag:</h1>
         <p class="selected-tag">{{ selectedTag }}</p>
         <div class="results-container">
-            <SearchResult 
-                v-for="searchResult in searchResults" 
-                :key="searchResult" 
-                :title="searchResult.Title"
-                :author="searchResult.Author" 
-                :display="searchResult.display"
-            />
+            <SearchResult v-for="searchResult in searchResults" :key="searchResult" :title="searchResult.Title"
+                :author="searchResult.Author" :display="searchResult.display" />
         </div>
     </div>
 </template>
@@ -73,11 +68,21 @@ export default {
 }
 
 .selected-tag {
-    background-color: rgb(110, 136, 196);
-    border-radius: 10px;
-    padding: 10px;
-    width: fit-content;
+    font-weight: 600;
     margin-top: 20px;
+    background-color: rgb(110, 136, 196);
+    text-align: center;
+    border-radius: 10px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    max-width: fit-content;
+    max-height: fit-content;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: white;
+    font-size: small;
+    margin-right: 1vw;
+    margin-left: 1vw;
 }
 
 .results-container {
