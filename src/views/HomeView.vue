@@ -8,12 +8,13 @@
     <div class="secondContent">
       <h1>What is SER375?</h1>
       <p class="description">
-        SER375 is the Open-Source Development course taught by Professor Alex Thimineur at Quinnipiac University. 
-        This course introduces students into the world of open-source development, 
-        which includes subject matter such as how the open-source community operates, 
-        expanding on existing projects, and how to properly use and manage all resources available to computer scientists in order to create large-scale applications,
-        including those outside of a developer's existing comfort zone. 
-        Each student in this course has a unique project, which can be found on this site. 
+        SER375 is the Open-Source Development course taught by Professor Alex Thimineur at Quinnipiac University.
+        This course introduces students into the world of open-source development,
+        which includes subject matter such as how the open-source community operates,
+        expanding on existing projects, and how to properly use and manage all resources available to computer scientists
+        in order to create large-scale applications,
+        including those outside of a developer's existing comfort zone.
+        Each student in this course has a unique project, which can be found on this site.
         This site itself was a project created in this course by Elizabeth Delea.
       </p>
     </div>
@@ -78,9 +79,8 @@ export default {
 }
 
 .description {
-  text-align: left;
-  text-indent: 50px;
-  max-width: 800px;
+  text-align: center;
+  max-width: 70vw;
 }
 
 h1,
