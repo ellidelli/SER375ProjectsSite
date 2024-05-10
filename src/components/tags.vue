@@ -188,7 +188,7 @@ h4 {
     font-family: "Poppins", sans-serif;
     font-size: 13px;
     font-weight: 700;
-    
+    text-decoration: none;
 }
 
 .tagButton:hover {
