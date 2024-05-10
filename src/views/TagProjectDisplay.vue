@@ -1,10 +1,13 @@
 <template>
-    <div class="bg">
-        <h1>Selected Tag:</h1>
-        <p class="selected-tag">{{ selectedTag }}</p>
-        <div class="results-container">
-            <SearchResult v-for="searchResult in searchResults" :key="searchResult" :title="searchResult.Title"
-                :author="searchResult.Author" :display="searchResult.display" />
+    <div>
+        <button @click="toTagsPage" class="all-tags-button">See All Tags</button>
+        <div class="bg">
+            <h1>Selected Tag:</h1>
+            <p class="selected-tag">{{ selectedTag }}</p>
+            <div class="results-container">
+                <SearchResult v-for="searchResult in searchResults" :key="searchResult" :title="searchResult.Title"
+                    :author="searchResult.Author" :display="searchResult.display" />
+            </div>
         </div>
     </div>
 </template>
@@ -51,6 +54,11 @@ export default {
             selectedTag: null,
             searchResults: []
         }
+    },
+    methods: {
+        toTagsPage() {
+            return this.$router.push('/tags')
+        }
     }
 }
 </script>
@@ -65,6 +73,12 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.all-tags-button {
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
 }
 
 .selected-tag {
