@@ -41,7 +41,10 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0 } // scroll to top of page when route changes
+  }
 })
 
 export default router
