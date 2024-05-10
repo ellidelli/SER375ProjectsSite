@@ -65,7 +65,7 @@ export default {
   info: {
     title: 'Terraria Voyager Mod',
     author: 'Garrett Goldberg & Andrew Labbe',
-    tags: ["Sample", "Templates", "Open Source", "Help", "Gaming", "Terraria", "Mod", "Video Games"]
+    tags: ["Sample", "Templates", "Open Source", "Help", "Gaming", "Terraria", "Mod", "Video Games", "Spring 2024"]
   }
 }
 </script>

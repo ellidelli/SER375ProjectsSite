@@ -55,7 +55,7 @@ export default {
   info: {
     title: 'Melody',
     author: 'Anton Petrenko',
-    tags: ["NextJS", "Music", "React"]
+    tags: ["NextJS", "Music", "React", "Spring 2024"]
   }
 }
 </script>

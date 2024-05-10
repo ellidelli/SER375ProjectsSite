@@ -51,7 +51,7 @@ export default {
     info: {
         title: 'SuppTrack',
         author: 'Taylor Lea',
-        tags: ["iOS", "Swift", "API", "Spring2024"]
+        tags: ["iOS", "Swift", "API", "Spring 2024"]
     }
 }
 </script>

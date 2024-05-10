@@ -56,7 +56,7 @@ export default {
   info: {
     title: "Aidans Mod",
     author: "Aidan Mountain",
-    tags: ["Minecraft", "Mod", "Open Source", "Hockey"],
+    tags: ["Minecraft", "Mod", "Open Source", "Hockey", "Spring 2024"],
   },
 };
 </script>

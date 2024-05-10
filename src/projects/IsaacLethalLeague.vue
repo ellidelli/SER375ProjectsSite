@@ -55,7 +55,7 @@ export default {
   info: {
     title: 'Isaac Lethal League',
     author: 'Marcus Ferreira',
-    tags: ["Lua", "XML", "Open Source", "TBOI: Repentance", "Lethal League Blaze", "Video Game"]
+    tags: ["Lua", "XML", "Open Source", "TBOI: Repentance", "Lethal League Blaze", "Video Game", "Spring 2024"]
   }
 }
 </script>

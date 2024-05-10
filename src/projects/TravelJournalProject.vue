@@ -79,7 +79,7 @@ export default {
     info: {
         title: 'Travel Journal Project',
         author: 'Gabby Pierce',
-        tags: ["Travel", "Journal", "Memories"]
+        tags: ["Travel", "Journal", "Memories", "Spring 2024"]
     }
 }
 </script>

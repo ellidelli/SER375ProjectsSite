@@ -46,7 +46,7 @@ export default {
   info: {
     title: 'Two Column Sample Project',
     author: 'John Smith',
-    tags: ["Sample", "Templates", "Open Source", "Help"]
+    tags: ["Sample", "Templates", "Open Source", "Help", "Spring 2024"]
   }
 }
 </script>

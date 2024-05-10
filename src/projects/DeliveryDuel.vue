@@ -86,7 +86,7 @@ image: two
 info: {
 title: 'Delivery Duel',
 author: 'Brian Wanamaker & Matt Nova',
-tags: ["JavaScript", "Firebase", "Open Source", "Full-Stack"]
+tags: ["JavaScript", "Firebase", "Open Source", "Full-Stack", "Spring 2024"]
 }
 }
 </script>

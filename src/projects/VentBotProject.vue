@@ -70,7 +70,7 @@ export default {
     info: {
         title: 'VentBotProject',
         author: 'Juliet Lombardi',
-        tags: ["Sample", "Templates", "Open Source", "Help"]
+        tags: ["Sample", "Templates", "Open Source", "Help", "Spring 2024"]
     }
 }
 </script>

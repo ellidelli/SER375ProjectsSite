@@ -74,7 +74,7 @@ export default {
     info: {
         title: 'Slideshow Sample Project',
         author: 'John Smith',
-        tags: ["Sample", "Templates", "Open Source", "Help"]
+        tags: ["Sample", "Templates", "Open Source", "Help", "Spring 2024"]
     }
 }
 </script>

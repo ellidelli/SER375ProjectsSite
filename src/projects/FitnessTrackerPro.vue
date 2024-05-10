@@ -59,7 +59,7 @@ export default {
   info: {
     title: 'FitnessTrackerPro',
     author: 'Kastrijot Syla',
-    tags: ["Fitness", "Workout", "Tracking", "IOS"]
+    tags: ["Fitness", "Workout", "Tracking", "IOS", "Spring 2024"]
   }
 }
 </script>
