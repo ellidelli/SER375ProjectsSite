@@ -87,7 +87,7 @@ export default {
   info: {
     title: "StockTraderPro",
     author: "Aaryan Kapoor",
-    tags: ["SwiftUI", "Swift", "Xcode", "IOS", "iPhone", "Spring 2024"],
+    tags: ["SwiftUI", "Swift", "Xcode", "iOS", "iPhone", "Spring 2024", "Finance"],
   },
 };
 </script>

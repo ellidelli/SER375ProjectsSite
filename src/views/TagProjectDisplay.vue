@@ -43,7 +43,6 @@ export default {
         });
         matches.sort((a, b) => (a.Title.localeCompare(b.Title)));
         this.searchResults = matches;
-        console.log(this.searchResults[0])
         // if no results, redirect user back to the tags page
         if (this.searchResults.length === 0) {
             return this.$router.push('/tags')

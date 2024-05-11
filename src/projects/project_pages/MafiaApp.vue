@@ -83,7 +83,7 @@ export default {
   info: {
     title: "Mafia App",
     author: "Sam Feld",
-    tags: ["Spring 2024", "iPhone", "Open Source", "Swift", "SwiftUI", "Xcode", "Firebase", "Game", "Mafia", "Party", "Fun"],
+    tags: ["Spring 2024", "iPhone", "iOS", "Swift", "SwiftUI", "Xcode", "Firebase", "Game", "Mafia", "Multiplayer"],
   },
 };
 </script>

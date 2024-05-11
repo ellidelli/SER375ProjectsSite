@@ -59,7 +59,7 @@ export default {
   info: {
     title: 'HealthCare',
     author: 'Shankar Yellure',
-    tags: ["java", "Android Studio", "Open Source", "Help", "Spring 2024"]
+    tags: ["Java", "Android", "Spring 2024"]
   }
 }
 </script>

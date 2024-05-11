@@ -52,7 +52,7 @@ export default {
   info: {
     title: 'LET_US_MOD_ETG',
     author: 'Riley Damasco',
-    tags: ["Spring 2024"]
+    tags: ["Spring 2024", "Enter the Gungeon", "Game Modding"]
   }
 }
 </script>

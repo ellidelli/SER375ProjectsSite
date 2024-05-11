@@ -21,7 +21,6 @@
                 <div style="padding-bottom: 10vh;">
                     <a href="https://github.com/Taylorlea43/SuppTrackSwtift">Github Repo</a><br>
                     <a href="https://firebase.google.com/docs">Firebase Documentation</a><br>
-                    <a href="https://sortablejs.github.io/Vue.Draggable/#/simple">Draggable Vue components</a><br>
                     <a href="https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI">Carbode</a>
                 </div>
             </template>
@@ -51,7 +50,7 @@ export default {
     info: {
         title: 'SuppTrack',
         author: 'Taylor Lea',
-        tags: ["iOS", "Swift", "API", "Spring 2024"]
+        tags: ["iOS", "Swift", "Firebase", "Barcode Scanner", "Spring 2024"]
     }
 }
 </script>

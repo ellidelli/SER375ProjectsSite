@@ -103,7 +103,7 @@ export default {
     info: {
         title: 'HDR Shulk Rework',
         author: 'Jonathan Mason',
-        tags: ["Super Smash Bros. Ultimate", "Open Source", "Game Modding", "Shulk", "Xenoblade", "Rust", "Skyline", "Smashline", "Switch Modding", "Spring 2024"]
+        tags: ["Super Smash Bros. Ultimate", "Game Modding", "Rust", "Skyline", "Smashline", "Nintendo Switch", "Spring 2024"]
     }
 }
 </script>

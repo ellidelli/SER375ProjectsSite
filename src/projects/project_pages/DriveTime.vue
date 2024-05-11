@@ -62,7 +62,7 @@ export default {
   info: {
     title: 'Drive Time',
     author: 'Mia Troiano',
-    tags: ["ios", "SwiftUI", "MapKit", "Open Source", "Spring 2024"]
+    tags: ["iOS", "SwiftUI", "Swift", "Apple MapKit", "Spring 2024"]
   }
 }
 </script>

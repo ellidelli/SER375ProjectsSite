@@ -58,7 +58,7 @@ export default {
   info: {
     title: 'MyLittleLibrary',
     author: 'Lauren Sloane',
-    tags: ["Vue", "Website", "JavaScript", "CSS", "Spring 2024"]
+    tags: ["Vue", "Website", "JavaScript", "CSS", "HTML", "Spring 2024"]
   }
 }
 </script>

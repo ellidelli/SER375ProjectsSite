@@ -55,7 +55,7 @@
     info: {
       title: 'Template Scholar',
       author: 'Hannah Pfersch',
-      tags: ["Vue", "Templates", "Open Source", "HTML", "CSS", "JavaScript", "Academic", "Spring 2024"]
+      tags: ["Vue", "HTML", "CSS", "JavaScript", "Academic", "Spring 2024"]
     }
   }
   </script>

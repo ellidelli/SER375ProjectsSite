@@ -109,8 +109,7 @@ export default {
       "Computer Vision",
       "Mouse",
       "Hand Tracking",
-      "Mediapipe",
-      "Ready to Use",
+      "MediaPipe"
     ],
   },
 };

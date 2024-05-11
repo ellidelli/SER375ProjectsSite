@@ -101,7 +101,7 @@ export default {
     info: {
         title: 'Minecraft Mod PN',
         author: 'Philip Nora',
-        tags: ["1.19", "Open Source", "IntelliJ", "Spring 2024"]
+        tags: ["Minecraft", "Java", "Game Modding", "Spring 2024"]
     }
 }
 </script>

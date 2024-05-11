@@ -20,7 +20,7 @@ export default {
   info: {
     title: 'FinanceWebApp',
     author: 'Alex Power',
-    tags: ["Vue.js", "API", "Express.js", "Spring 2024"]
+    tags: ["Vue", "API", "Express", "Spring 2024", "Finance"]
   }
 }
 </script>

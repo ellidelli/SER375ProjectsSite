@@ -67,7 +67,7 @@ export default {
     return {
       projectTitle: "Character Creator",
       author: "Emily Balboni",
-      pictures: [imgOne, imgThree],
+      pictures: [imgOne, imgTwo, imgThree],
       video: charVideo //get rid of the quotes when putting in your video variable
     }
   },

@@ -88,7 +88,7 @@ export default {
     info: {
         title: 'Bias Sorter',
         author: 'Shannon Brickett',
-        tags: ["Vue", "Website", "JavaScript", "HTML", "CSS", "Spring 2024"]
+        tags: ["Vue", "Website", "JavaScript", "HTML", "CSS", "Firebase", "Spring 2024"]
     }
 }
 </script>

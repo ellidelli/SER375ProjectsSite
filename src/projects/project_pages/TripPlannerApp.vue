@@ -87,7 +87,7 @@ export default {
   info: {
     title: "Trip Planner App",
     author: "Julia Woeste",
-    tags: ["iOS", "Swift", "X Code", "Spring 2024"],
+    tags: ["iOS", "Swift", "Xcode", "Travel", "Spring 2024"],
   },
 };
 </script>

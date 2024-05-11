@@ -59,7 +59,7 @@ export default {
   info: {
     title: 'Misty Foglands',
     author: 'Jacob Hogrefe',
-    tags: ["Minecraft", "Open Source", "Java", "IntelliJ", "1.18.2", "Fabric", "Spring 2024"]
+    tags: ["Minecraft", "Java", "Minecraft Fabric", "Game Modding", "Spring 2024"]
   }
 }
 </script>
