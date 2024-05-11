@@ -51,12 +51,12 @@
 </template>
   
 <script>
-import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
-import imgOne from '../projects/project_images/CharCreatorImg.png';
-import imgTwo from '../projects/project_images/CharCreatorImg2.png';
-import imgThree from '../projects/project_images/CharCreatorImg3.png';
-import charVideo from '../projects/project_videos/CharacterCreatorVid.mp4'
-//import video from '../projects/project_videos/CharacterCreatorVid.mp4
+import twoColumnTemplate from '../../components/templates/twoColumnTemplate.vue'
+import imgOne from '../project_images/CharCreatorImg.png';
+import imgTwo from '../project_images/CharCreatorImg2.png';
+import imgThree from '../project_images/CharCreatorImg3.png';
+import charVideo from '../project_videos/CharacterCreatorVid.mp4'
+//import video from '../project_videos/CharacterCreatorVid.mp4
 
 export default {
   name: 'characterCreator',

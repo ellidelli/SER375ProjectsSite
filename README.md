@@ -73,8 +73,8 @@ Choose between the 3 different templates.
 7. In this section of the code, change the import paths to your image(s) and your video. (uncomment the video import and add more imports if you have more than one photo)
     ```Javascript
    import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
-   import sampleImage from '../projects/project_images/ProjectSampleImage.jpeg';
-   //import sampleVideo from '../projects/project_videos/<VIDEO TITLE>'
+   import sampleImage from '../project_images/ProjectSampleImage.jpeg';
+   //import sampleVideo from '../project_videos/<VIDEO TITLE>'
    ```
 8. In this section of code:
    * Replace the name: with your project name (the same as your vue file)
@@ -142,12 +142,12 @@ _Note: The slideshow height cannot be adjusted so take that into consideration w
    * Update the video import to your video
 ```Javascript
 //import images
-import one from '../projects/project_images/1.png';
-import two from '../projects/project_images/2.png';
-import three from '../projects/project_images/3.png';
+import one from '../project_images/1.png';
+import two from '../project_images/2.png';
+import three from '../project_images/3.png';
 
 //import video
-import video from '../projects/project_videos/<YOUR VIDEO>'
+import video from '../project_videos/<YOUR VIDEO>'
 ```
 4. In this section of code:
     * Update the name: to your project name, no spaces, and same as your vue file name. 

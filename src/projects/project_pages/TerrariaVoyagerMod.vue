@@ -44,10 +44,10 @@
 </template>
   
 <script>
-import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
-import modImageA from '../projects/project_images/VoyagerModIcon.jpg';
-import modImageB from '../projects/project_images/VoyagerModBiome.jpg';
-import sampleVideo from '../projects/project_videos/TerrariaTrailer.mp4'
+import twoColumnTemplate from '../../components/templates/twoColumnTemplate.vue'
+import modImageA from '../project_images/VoyagerModIcon.jpg';
+import modImageB from '../project_images/VoyagerModBiome.jpg';
+import sampleVideo from '../project_videos/TerrariaTrailer.mp4'
 
 export default {
   name: 'TerrariaVoyagerMod',

@@ -39,9 +39,9 @@
 </template>
   
 <script>
-import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
-import sampleImage from "../projects/project_images/HealthCare.png";
-import sampleVideo from "../projects/project_videos/HealthCare.mp4";
+import twoColumnTemplate from '../../components/templates/twoColumnTemplate.vue'
+import sampleImage from "../project_images/HealthCare.png";
+import sampleVideo from "../project_videos/HealthCare.mp4";
 
 export default {
   name: 'HealthCare',

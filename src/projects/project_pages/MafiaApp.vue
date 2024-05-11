@@ -60,12 +60,12 @@
 </template>
 
 <script>
-import oneColumnTemplate from "../components/templates/oneColumnTemplate.vue";
-import sampleImage1 from "../projects/project_images/sf_mafia_1.png";
-import sampleImage2 from "../projects/project_images/sf_mafia_2.png";
-import sampleImage3 from "../projects/project_images/sf_mafia_3.png";
-import sampleImage4 from "../projects/project_images/sf_mafia_4.png";
-import sampleVideo from '../projects/project_videos/mafiaDemoCompressed.mp4';
+import oneColumnTemplate from "../../components/templates/oneColumnTemplate.vue";
+import sampleImage1 from "../project_images/sf_mafia_1.png";
+import sampleImage2 from "../project_images/sf_mafia_2.png";
+import sampleImage3 from "../project_images/sf_mafia_3.png";
+import sampleImage4 from "../project_images/sf_mafia_4.png";
+import sampleVideo from '../project_videos/mafiaDemoCompressed.mp4';
 
 export default {
   name: "MafiaApp",

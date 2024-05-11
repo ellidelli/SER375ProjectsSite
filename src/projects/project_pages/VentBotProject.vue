@@ -47,12 +47,12 @@
 </template>
     
 <script>
-import oneColumnTemplate from '../components/templates/oneColumnTemplate.vue';
-import sampleImage from '../projects/project_images/ProjectSampleImage.jpeg';
-import chrCommandImage from '../projects/project_images/VentBot_characterCommand.png';
-import domainCommandImage from '../projects/project_images/VentBot_domainCommand.png';
-import showcaseVideo from '../projects/project_videos/VentBotShowcaseVideo.mp4'
-// import sampleVideo from '../projects/project_videos/<VIDEO TITLE>'
+import oneColumnTemplate from '../../components/templates/oneColumnTemplate.vue';
+import sampleImage from '../project_images/ProjectSampleImage.jpeg';
+import chrCommandImage from '../project_images/VentBot_characterCommand.png';
+import domainCommandImage from '../project_images/VentBot_domainCommand.png';
+import showcaseVideo from '../project_videos/VentBotShowcaseVideo.mp4'
+// import sampleVideo from '../project_videos/<VIDEO TITLE>'
 
 export default {
     name: 'VentBotProject.vue',

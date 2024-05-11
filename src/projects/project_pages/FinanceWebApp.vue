@@ -1,7 +1,7 @@
 <script>
-import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
-import sampleImage from '../projects/project_images/webapp-ss.png';
-import realvid from '../projects/project_videos/webapp-video.mp4'
+import twoColumnTemplate from '../../components/templates/twoColumnTemplate.vue'
+import sampleImage from '../project_images/webapp-ss.png';
+import realvid from '../project_videos/webapp-video.mp4'
 
 
 export default {

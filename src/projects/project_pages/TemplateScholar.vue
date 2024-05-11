@@ -33,11 +33,11 @@
   </template>
     
   <script>
-  import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
-  import homepage_image from '../projects/project_images/tshome.png';
-  import resume1_image from '../projects/project_images/tsresume1.png';
-  import complete_resume from '../projects/project_images/tsgeneratedresume.png';
-  import sampleVideo from '../projects/project_videos/tsvideodemo.mp4'
+  import twoColumnTemplate from '../../components/templates/twoColumnTemplate.vue'
+  import homepage_image from '../project_images/tshome.png';
+  import resume1_image from '../project_images/tsresume1.png';
+  import complete_resume from '../project_images/tsgeneratedresume.png';
+  import sampleVideo from '../project_videos/tsvideodemo.mp4'
   
   export default {
     name: 'TemplateScholar',

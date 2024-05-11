@@ -83,10 +83,10 @@
 </template>
 
 <script>
-import oneColumnTemplate from "../components/templates/oneColumnTemplate.vue";
-import UsingAirMouseImg from "../projects/project_images/UsingAirMouse.png";
-import ClickInstructionsImg from "../projects/project_images/ClickInstructions.png";
-import AirMouseVideo from "../projects/project_videos/AirMouseShowcase.mp4";
+import oneColumnTemplate from "../../components/templates/oneColumnTemplate.vue";
+import UsingAirMouseImg from "../project_images/UsingAirMouse.png";
+import ClickInstructionsImg from "../project_images/ClickInstructions.png";
+import AirMouseVideo from "../project_videos/AirMouseShowcase.mp4";
 
 export default {
   name: "AirMouse",

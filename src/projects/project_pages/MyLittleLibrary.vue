@@ -37,10 +37,10 @@
 </template>
 
 <script>
-import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
-import Homescreen from '../projects/project_images/MyLittleLibraryhomescreen.png';
-import BrowseScreen from '../projects/project_images/BrowseViewMLL.png';
-import MyLittleLibraryVid from '../projects/project_videos/MyLittleLibraryVid.mp4'
+import twoColumnTemplate from '../../components/templates/twoColumnTemplate.vue'
+import Homescreen from '../project_images/MyLittleLibraryhomescreen.png';
+import BrowseScreen from '../project_images/BrowseViewMLL.png';
+import MyLittleLibraryVid from '../project_videos/MyLittleLibraryVid.mp4'
 
 export default {
   name: 'MyLittleLibrary',

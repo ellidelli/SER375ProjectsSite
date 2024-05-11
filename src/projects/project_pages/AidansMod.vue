@@ -36,9 +36,9 @@
 </template>
 
 <script>
-import oneColumnTemplate from "../components/templates/oneColumnTemplate.vue";
-import sampleImage from "../projects/project_images/AidansModPhoto1.png";
-//import sampleVideo from '../projects/project_videos/<AidansModVideo.mp4>'
+import oneColumnTemplate from "../../components/templates/oneColumnTemplate.vue";
+import sampleImage from "../project_images/AidansModPhoto1.png";
+//import sampleVideo from '../project_videos/<AidansModVideo.mp4>'
 
 export default {
   name: "OneColumnSampleProject",

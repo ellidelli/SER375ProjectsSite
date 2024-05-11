@@ -25,11 +25,11 @@
   </template>
     
   <script>
-  import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
-  import homeImage from '../projects/project_images/Ecommerce_Home.png';
-  import searchImage from '../projects/project_images/Ecommerce_Search.png';
-  import cartImage from '../projects/project_images/Ecommerce_Cart.png';
-  import demoVideo from '../projects/project_videos/Ecommerce_Demo.mp4'
+  import twoColumnTemplate from '../../components/templates/twoColumnTemplate.vue'
+  import homeImage from '../project_images/Ecommerce_Home.png';
+  import searchImage from '../project_images/Ecommerce_Search.png';
+  import cartImage from '../project_images/Ecommerce_Cart.png';
+  import demoVideo from '../project_videos/Ecommerce_Demo.mp4'
   
   export default {
     name: 'EcommerceSite',

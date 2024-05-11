@@ -60,15 +60,15 @@
 </template>
     
 <script>
-import slideshowTemplate from '../components/templates/SlideshowTemplate.vue';
+import slideshowTemplate from '../../components/templates/SlideshowTemplate.vue';
 
 //import images
-import one from '../projects/project_images/castle (1).png';
-import two from '../projects/project_images/ignitium_block (1).png';
+import one from '../project_images/castle (1).png';
+import two from '../project_images/ignitium_block (1).png';
 
 
 //import video
-import video from '../projects/project_videos/ModDemo.mov';
+import video from '../project_videos/ModDemo.mov';
 
 // Import VueperSlides and VueperSlide from vueperslides
 import { VueperSlides, VueperSlide } from 'vueperslides';

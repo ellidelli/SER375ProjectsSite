@@ -31,15 +31,15 @@
 </template>
     
 <script>
-import slideshowTemplate from '../components/templates/SlideshowTemplate.vue';
+import slideshowTemplate from '../../components/templates/SlideshowTemplate.vue';
 
 //import images
-import one from '../projects/project_images/1.png';
-import two from '../projects/project_images/2.png';
-import three from '../projects/project_images/3.png';
+import one from '../project_images/1.png';
+import two from '../project_images/2.png';
+import three from '../project_images/3.png';
 
 //import video
-// import video from '../projects/project_videos/<YOUR VIDEO>'
+// import video from '../project_videos/<YOUR VIDEO>'
 
 // Import VueperSlides and VueperSlide from vueperslides
 import { VueperSlides, VueperSlide } from 'vueperslides';

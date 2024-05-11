@@ -34,10 +34,10 @@
 </template>
   
 <script>
-import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
-import screen1 from '../projects/project_images/screen1.jpg'
-import screen2 from '../projects/project_images/screen2.jpg'
-import video1 from '../projects/project_videos/video1.mp4';
+import twoColumnTemplate from '../../components/templates/twoColumnTemplate.vue'
+import screen1 from '../project_images/screen1.jpg'
+import screen2 from '../project_images/screen2.jpg'
+import video1 from '../project_videos/video1.mp4';
 
 export default {
   name: 'IsaacLethalLeague',

@@ -35,9 +35,9 @@
 </template>
   
 <script>
-import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
-import sampleImage from '../projects/project_images/melody.jpg';
-import sampleVideo from '../projects/project_videos/MelodyVideo.mov'
+import twoColumnTemplate from '../../components/templates/twoColumnTemplate.vue'
+import sampleImage from '../project_images/melody.jpg';
+import sampleVideo from '../project_videos/MelodyVideo.mov'
 
 export default {
   name: 'Melody',

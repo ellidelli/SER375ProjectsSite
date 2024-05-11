@@ -82,10 +82,10 @@
 </template>
     
 <script>
-import oneColumnTemplate from '../components/templates/oneColumnTemplate.vue'
-import image_one from '../projects/project_images/monado_arts.jpg'
-import image_two from '../projects/project_images/monado_forward_tilt.jpg'
-import video from '../projects/project_videos/demo_smash_match.mp4'
+import oneColumnTemplate from '../../components/templates/oneColumnTemplate.vue'
+import image_one from '../project_images/monado_arts.jpg'
+import image_two from '../project_images/monado_forward_tilt.jpg'
+import video from '../project_videos/demo_smash_match.mp4'
 
 export default {
     name: 'HDRShulkRework',

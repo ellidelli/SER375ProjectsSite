@@ -38,9 +38,9 @@
 </template>
 
 <script>
-import oneColumnTemplate from "../components/templates/oneColumnTemplate.vue";
-import sampleImage from "../projects/project_images/ProjectSampleImage.jpeg";
-// import sampleVideo from '../projects/project_videos/<VIDEO TITLE>'
+import oneColumnTemplate from "../../components/templates/oneColumnTemplate.vue";
+import sampleImage from "../project_images/ProjectSampleImage.jpeg";
+// import sampleVideo from '../project_videos/<VIDEO TITLE>'
 
 export default {
   name: "OneColumnSampleProject",

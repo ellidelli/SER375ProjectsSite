@@ -32,9 +32,9 @@
 </template>
   
 <script>
-import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
-import sampleImage from '../projects/project_images/4.jpeg';
-import sampleVideo from '../projects/project_videos/Video.mp4'
+import twoColumnTemplate from '../../components/templates/twoColumnTemplate.vue'
+import sampleImage from '../project_images/4.jpeg';
+import sampleVideo from '../project_videos/Video.mp4'
 
 export default {
   name: 'LET_US_MOD_ETG',

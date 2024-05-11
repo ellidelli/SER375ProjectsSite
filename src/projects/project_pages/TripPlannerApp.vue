@@ -64,12 +64,12 @@
 </template>
 
 <script>
-import oneColumnTemplate from "../components/templates/oneColumnTemplate.vue";
-import mainScreen from "../projects/project_images/mainScreen.png";
-import itinerary from "../projects/project_images/itineraryScreen.png";
-import packing from "../projects/project_images/packingScreen.png";
-import budget from "../projects/project_images/budgetScreen.png";
-import video from "../projects/project_videos/finalRecording.mp4";
+import oneColumnTemplate from "../../components/templates/oneColumnTemplate.vue";
+import mainScreen from "../project_images/mainScreen.png";
+import itinerary from "../project_images/itineraryScreen.png";
+import packing from "../project_images/packingScreen.png";
+import budget from "../project_images/budgetScreen.png";
+import video from "../project_videos/finalRecording.mp4";
 
 export default {
   name: "TripPlannerApp",

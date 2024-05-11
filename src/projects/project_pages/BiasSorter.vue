@@ -65,12 +65,12 @@
 </template>
 
 <script>
-import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
-import home from '../projects/project_images/BrickettHome.png';
-import list from '../projects/project_images/BrickettList.png';
-import groups from '../projects/project_images/BrickettGroups.png';
-import birthdays from '../projects/project_images/BrickettBirthday.png';
-import demoVideo from '../projects/project_videos/BrickettDemo.mp4';
+import twoColumnTemplate from '../../components/templates/twoColumnTemplate.vue'
+import home from '../project_images/BrickettHome.png';
+import list from '../project_images/BrickettList.png';
+import groups from '../project_images/BrickettGroups.png';
+import birthdays from '../project_images/BrickettBirthday.png';
+import demoVideo from '../project_videos/BrickettDemo.mp4';
 
 export default {
     name: 'BiasSorter',

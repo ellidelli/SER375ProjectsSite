@@ -64,12 +64,12 @@
 </template>
 
 <script>
-import oneColumnTemplate from "../components/templates/oneColumnTemplate.vue";
-//import sampleImage from "../projects/project_images/ProjectSampleImage.jpeg";
-import sampleImage from "../projects/project_images/stocktraderpro1.jpeg";
-import sampleImage1 from "../projects/project_images/stocktraderpro2.jpeg";
-import sampleImage2 from "../projects/project_images/stocktraderpro3.jpeg";
-import sampleVideo from "../projects/project_videos/stocktraderpro.mp4";
+import oneColumnTemplate from "../../components/templates/oneColumnTemplate.vue";
+//import sampleImage from "../project_images/ProjectSampleImage.jpeg";
+import sampleImage from "../project_images/stocktraderpro1.jpeg";
+import sampleImage1 from "../project_images/stocktraderpro2.jpeg";
+import sampleImage2 from "../project_images/stocktraderpro3.jpeg";
+import sampleVideo from "../project_videos/stocktraderpro.mp4";
 
 export default {
   name: "OneColumnSampleProject",

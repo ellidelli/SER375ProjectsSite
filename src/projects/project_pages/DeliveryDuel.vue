@@ -46,15 +46,15 @@ equipped them with a deeper understanding of what it takes to create a compellin
 </template>
 
 <script>
-import slideshowTemplate from '../components/templates/SlideshowTemplate.vue';
+import slideshowTemplate from '../../components/templates/SlideshowTemplate.vue';
 
 //import images
-import one from '../projects/project_images/screenshot1.png';
-import two from '../projects/project_images/screenshot2.png';
+import one from '../project_images/screenshot1.png';
+import two from '../project_images/screenshot2.png';
 
 
 //import video
-import video from '../projects/project_videos/DeliveryDuelVideo.mp4'
+import video from '../project_videos/DeliveryDuelVideo.mp4'
 
 // Import VueperSlides and VueperSlide from vueperslides
 import { VueperSlides, VueperSlide } from 'vueperslides';

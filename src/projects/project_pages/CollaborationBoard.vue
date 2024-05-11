@@ -91,11 +91,11 @@
 </template>
     
 <script>
-import oneColumnTemplate from '../components/templates/oneColumnTemplate.vue'
-import boardImage from '../projects/project_images/merritt-collaboration-board-1.png';
-import cardImage from '../projects/project_images/merritt-collaboration-board-2.png';
-import chatImage from '../projects/project_images/merritt-collaboration-board-3.png';
-import collabVideo from '../projects/project_videos/merritt-collaboration-board.mp4'
+import oneColumnTemplate from '../../components/templates/oneColumnTemplate.vue'
+import boardImage from '../project_images/merritt-collaboration-board-1.png';
+import cardImage from '../project_images/merritt-collaboration-board-2.png';
+import chatImage from '../project_images/merritt-collaboration-board-3.png';
+import collabVideo from '../project_videos/merritt-collaboration-board.mp4'
 
 export default {
     name: 'CollaborationBoard',

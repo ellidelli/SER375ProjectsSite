@@ -56,10 +56,10 @@
 </template>
 
 <script>
-import twoColumnTemplate from "../components/templates/twoColumnTemplate.vue";
-import sampleImage from "../projects/project_images/P1.png";
-import sampleImage2 from "../projects/project_images/P2.png";
-import sampleVideo from "../projects/project_videos/WrkCompleted6.mov";
+import twoColumnTemplate from "../../components/templates/twoColumnTemplate.vue";
+import sampleImage from "../project_images/P1.png";
+import sampleImage2 from "../project_images/P2.png";
+import sampleVideo from "../project_videos/WrkCompleted6.mov";
 
 export default {
   name: "MazeChaseGame",

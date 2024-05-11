@@ -26,9 +26,9 @@
 </template>
   
 <script>
-import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
-import sampleImage from '../projects/project_images/ProjectSampleImage.jpeg';
-// import sampleVideo from '../projects/project_videos/<VIDEO TITLE>'
+import twoColumnTemplate from '../../components/templates/twoColumnTemplate.vue'
+import sampleImage from '../project_images/ProjectSampleImage.jpeg';
+// import sampleVideo from '../project_videos/<VIDEO TITLE>'
 
 export default {
   name: 'TwoColumnSampleProject',

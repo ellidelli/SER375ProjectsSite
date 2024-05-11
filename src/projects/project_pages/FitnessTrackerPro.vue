@@ -38,10 +38,10 @@
 
   
 <script>
-import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
-import sampleImage from '../projects/project_images/iosphone.png';
-import sampleImage2 from '../projects/project_images/fitness.png';
- import sampleVideo from '../projects/project_videos/Iphone.mp4'
+import twoColumnTemplate from '../../components/templates/twoColumnTemplate.vue'
+import sampleImage from '../project_images/iosphone.png';
+import sampleImage2 from '../project_images/fitness.png';
+ import sampleVideo from '../project_videos/Iphone.mp4'
 
 export default {
   name: 'FitnessTrackerPro',

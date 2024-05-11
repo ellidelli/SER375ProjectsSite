@@ -41,10 +41,10 @@
 </template>
   
 <script>
-import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
-import DriveTime1 from '../projects/project_images/DriveTimeOne.png';
-import DriveTime2 from '../projects/project_images/DriveTimeTwo.png';
-import DriveVideo from '../projects/project_videos/DriveTimeVideo.mov'
+import twoColumnTemplate from '../../components/templates/twoColumnTemplate.vue'
+import DriveTime1 from '../project_images/DriveTimeOne.png';
+import DriveTime2 from '../project_images/DriveTimeTwo.png';
+import DriveVideo from '../project_videos/DriveTimeVideo.mov'
 
 export default {
   name: 'DriveTime',
