@@ -106,6 +106,13 @@ export default {
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
+    box-shadow: none;
+    border: none;
+}
+
+.all-tags-button:hover {
+    background: rgb(199, 197, 197);
+    transition: .1s;
 }
 
 .selected-tag {
