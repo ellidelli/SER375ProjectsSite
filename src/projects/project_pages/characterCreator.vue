@@ -74,7 +74,7 @@ export default {
   info: {
     title: 'Character Creator',
     author: 'Emily Balboni',
-    tags: ["iOS", "Spring 2024", "Open Source", "Creative Writing"]
+    tags: ["iOS", "Spring 2024", "Swift", "Creative Writing"]
   }
 }
 </script>
