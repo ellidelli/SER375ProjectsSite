@@ -29,7 +29,7 @@ export const getProjectComponent = (projectName) => {
   if (!selectedFileName) {
     return null
   }
-  const component = require(`${selectedFileName}`).default
+  const component = require(`./project_pages/${selectedFileName.substr(2)}`).default
   return component ? markRaw(component) : null
 }
 

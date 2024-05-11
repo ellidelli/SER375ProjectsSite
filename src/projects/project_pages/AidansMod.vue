@@ -38,7 +38,7 @@
 <script>
 import oneColumnTemplate from "../../components/templates/oneColumnTemplate.vue";
 import sampleImage from "../project_images/AidansModPhoto1.png";
-//import sampleVideo from '../project_videos/<AidansModVideo.mp4>'
+import sampleVideo from '../project_videos/AidansModVideo.mp4'
 
 export default {
   name: "OneColumnSampleProject",
@@ -50,7 +50,7 @@ export default {
       projectTitle: "Aidans Mod",
       author: "Aidan Mountain",
       pictures: [sampleImage],
-      //video: "sampleVideo", //get rid of the quotes when putting in your video variable
+      video: sampleVideo
     };
   },
   info: {
