@@ -1,6 +1,6 @@
 <template>
   <div>
-    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
       <template v-slot:description>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque adipisci nesciunt distinctio consectetur
           quisquam consequatur, corrupti reiciendis ex aut quibusdam minima quidem earum quod architecto deserunt
@@ -39,6 +39,7 @@ export default {
     return {
       projectTitle: "Two Column Sample Project",
       author: "John Smith",
+      githubUrl: 'www.github.com',
       pictures: [sampleImage],
       video: sampleVideo
     }

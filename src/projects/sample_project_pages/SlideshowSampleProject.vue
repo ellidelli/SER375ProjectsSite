@@ -1,6 +1,6 @@
 <template>
     <div>
-        <slideshowTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+        <slideshowTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
             <template v-slot:slideshow>
                 <vueper-slides fade :touchable="false" class="slideshow">
                     <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" />
@@ -56,6 +56,7 @@ export default {
         return {
             projectTitle: "Slideshow Sample Project",
             author: "John Smith",
+            githubUrl: 'www.github.com',
             video: sampleVideo,
             slides: [
                 {
