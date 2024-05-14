@@ -28,7 +28,7 @@
 <script>
 import twoColumnTemplate from '../../components/templates/twoColumnTemplate.vue'
 import sampleImage from '../project_images/ProjectSampleImage.jpeg';
-// import sampleVideo from '../project_videos/<VIDEO TITLE>'
+import sampleVideo from '../project_videos/sample.mp4'
 
 export default {
   name: 'TwoColumnSampleProject',
@@ -40,7 +40,7 @@ export default {
       projectTitle: "Two Column Sample Project",
       author: "John Smith",
       pictures: [sampleImage],
-      video: "sampleVideo" //get rid of the quotes when putting in your video variable
+      video: sampleVideo
     }
   },
   info: {

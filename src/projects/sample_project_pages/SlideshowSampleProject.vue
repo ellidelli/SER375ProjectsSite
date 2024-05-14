@@ -39,7 +39,7 @@ import two from '../project_images/2.png';
 import three from '../project_images/3.png';
 
 //import video
-// import video from '../project_videos/<YOUR VIDEO>'
+import sampleVideo from '../project_videos/sample.mp4'
 
 // Import VueperSlides and VueperSlide from vueperslides
 import { VueperSlides, VueperSlide } from 'vueperslides';
@@ -56,7 +56,7 @@ export default {
         return {
             projectTitle: "Slideshow Sample Project",
             author: "John Smith",
-            video: "sampleVideo", //get rid of the quotes when putting in your video variable
+            video: sampleVideo,
             slides: [
                 {
                     image: one
