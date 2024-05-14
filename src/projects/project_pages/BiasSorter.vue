@@ -1,6 +1,6 @@
 <template>
     <div>
-        <twoColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+        <twoColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
             <template v-slot:description>
                 <p>
                     This is a bias sorting website for K-Pop fans. A bias in K-Pop is a fan's favorite member(s) within
@@ -81,6 +81,7 @@ export default {
         return {
             projectTitle: "Bias Sorter",
             author: "Shannon Brickett",
+            githubUrl: 'https://github.com/shanbrick/Bias-Sorter',
             pictures: [home, list, groups, birthdays],
             video: demoVideo
         }

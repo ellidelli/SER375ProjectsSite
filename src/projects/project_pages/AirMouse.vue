@@ -3,6 +3,7 @@
     <oneColumnTemplate
       :projectTitle="projectTitle"
       :author="author"
+      :githubUrl="githubUrl"
       :pictures="pictures"
       :video="video"
     >
@@ -97,6 +98,7 @@ export default {
     return {
       projectTitle: "Air Mouse",
       author: "MacArthur Mills",
+      githubUrl: 'https://github.com/mmills2/Air_Mouse',
       pictures: [UsingAirMouseImg, ClickInstructionsImg],
       video: AirMouseVideo, //get rid of the quotes when putting in your video variable
     };

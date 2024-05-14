@@ -1,6 +1,6 @@
 <template>
   <div>
-    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
       <template v-slot:description>
         <p>This application is intended for writers to keep track of the stories they are
           currently working on and the characters for their stories. This is meant to help avoid
@@ -56,7 +56,6 @@ import imgOne from '../project_images/CharCreatorImg.png';
 import imgTwo from '../project_images/CharCreatorImg2.png';
 import imgThree from '../project_images/CharCreatorImg3.png';
 import charVideo from '../project_videos/CharacterCreatorVid.mp4'
-//import video from '../project_videos/CharacterCreatorVid.mp4
 
 export default {
   name: 'characterCreator',
@@ -67,6 +66,7 @@ export default {
     return {
       projectTitle: "Character Creator",
       author: "Emily Balboni",
+      githubUrl: 'https://github.com/eebalboni/CharacterCreator',
       pictures: [imgOne, imgTwo, imgThree],
       video: charVideo //get rid of the quotes when putting in your video variable
     }

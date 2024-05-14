@@ -1,6 +1,6 @@
 <template>
     <div>
-        <oneColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+        <oneColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
             <template v-slot:description>
                 <p>
                 Vent Bot is a discord bot that gives up to date information on the game Genshin Impact. Currently, the bot
@@ -63,6 +63,7 @@ export default {
         return {
             projectTitle: "VentBotProject",
             author: "Juliet Lombardi",
+            githubUrl: 'https://github.com/jilombardi/VentBot',
             pictures: [chrCommandImage, domainCommandImage],
             video: showcaseVideo //get rid of the quotes when putting in your video variable
         }

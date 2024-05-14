@@ -3,6 +3,7 @@
     <oneColumnTemplate
       :projectTitle="projectTitle"
       :author="author"
+      :githubUrl="githubUrl"
       :pictures="pictures"
       :video="video"
     >
@@ -49,6 +50,7 @@ export default {
     return {
       projectTitle: "Aidans Mod",
       author: "Aidan Mountain",
+      githubUrl: 'https://github.com/AidanMountain/AidansMod',
       pictures: [sampleImage],
       video: sampleVideo
     };

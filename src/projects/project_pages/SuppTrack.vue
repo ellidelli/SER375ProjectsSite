@@ -1,6 +1,6 @@
 <template>
     <div>
-        <twoColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+        <twoColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
             <template v-slot:description>
                 <p>Supptrack is an app for NCAA athletes and military personnel to monitor supplement ingredients. Users can
                     scan barcodes of supplements and see if they are safe to use, get personalized plans, and discover new
@@ -43,6 +43,7 @@ export default {
         return {
             projectTitle: "SuppTrack",
             author: "Taylor Lea",
+            githubUrl: 'https://github.com/Taylorlea43/SuppTrackSwtift',
             pictures: [SupptrackImage2, SupptrackImage3],
             video: SupptrackVideo
         }

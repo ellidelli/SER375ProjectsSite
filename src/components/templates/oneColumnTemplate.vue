@@ -1,7 +1,10 @@
 <template>
   <div class="data">
-    <h1>{{ projectTitle }}</h1>
-    <h3>{{ author }}</h3>
+    <div class="header">
+      <h1 class="project-title">{{ projectTitle }}</h1>
+      <h3 class="author">by {{ author }}</h3>
+      <GitHubButton class="github-button" :GitHubUrl="githubUrl"/>
+    </div>
     <div class="container">
       <h1>What is this project?</h1>
       <slot name="description"> </slot>
@@ -20,23 +23,20 @@
 </template>
 
 <script>
-import tags from "../tags.vue";
+import GitHubButton from '../GitHubButton.vue'
 
 export default {
   name: "oneColumnTemplate",
   props: [
     "projectTitle",
     "author",
+    "githubUrl",
     "tags",
-    "description",
-    "story",
-    "struggles",
-    "triumphs",
     "pictures",
     "video",
   ],
   components: {
-    tags,
+    GitHubButton
   },
 };
 </script>
@@ -46,10 +46,33 @@ export default {
   margin-top: 10vh;
 }
 
+.header {
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-title {
+  font-size: 45px;
+}
+
+.author {
+  margin-bottom: 10px;
+}
+
+.github-button {
+  margin-top: 40px !important;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   padding: 5vh 10vw 10vh 10vw;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container h1 {
@@ -69,10 +92,6 @@ h1,
 h2,
 h3 {
   color: white;
-}
-
-h3 {
-  padding-bottom: 5vh;
 }
 
 p {

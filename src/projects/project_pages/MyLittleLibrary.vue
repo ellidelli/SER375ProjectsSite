@@ -1,6 +1,6 @@
 <template>
   <div>
-    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
       <template v-slot:description>
         <p>This website is designed for book readers to search for new books as well as track books that they would like
           to read in the future, are currently reading, and have finished reading. Readers are also able to set reading
@@ -51,6 +51,7 @@ export default {
     return {
       projectTitle: "MyLittleLibrary",
       author: "Lauren Sloane",
+      githubUrl: 'https://github.com/sloanelauren/MyLittleLibrary',
       pictures: [Homescreen, BrowseScreen],
       video: MyLittleLibraryVid
     }

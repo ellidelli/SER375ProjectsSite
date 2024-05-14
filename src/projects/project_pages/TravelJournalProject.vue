@@ -1,6 +1,6 @@
 <template>
     <div>
-        <slideshowTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+        <slideshowTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
             <template v-slot:slideshow>
                 <vueper-slides fade :touchable="false" class="slideshow">
                     <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" />
@@ -39,8 +39,6 @@ import slideshowTemplate from '../../components/templates/SlideshowTemplate.vue'
 
 //import images
 import one from '../project_images/collage.png';
-//import two from '../project_images/resturant.png';
-//import three from '../project_images/journal.png';
 
 //import video
 import video from '../project_videos/travelDemoVideo.mp4'
@@ -60,18 +58,12 @@ export default {
         return {
             projectTitle: "Travel Journal Project",
             author: "Gabby Pierce",
+            githubUrl: 'https://github.com/gabbypierce/TravelHelper',
             video: video,
             slides: [
                 {
                     image: one
                 }
-                //,
-                //{
-                // image: two
-                //},
-                //{
-                //    image: three
-                //}
             ]
 
         }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
       <template v-slot:description>
         <p>The Healthcare Companion App is a comprehensive mobile application developed for Android platforms, designed to
           simplify the management of health-related tasks. It provides users with the ability to easily schedule doctor’s
@@ -52,6 +52,7 @@ export default {
     return {
       projectTitle: "HealthCare",
       author: "Shankar Yellure",
+      githubUrl: 'https://github.com/shankaryellure/HealthCare/',
       pictures: [sampleImage],
       video: sampleVideo // get rid of the quotes when putting in your video variable
     }

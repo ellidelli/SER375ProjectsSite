@@ -3,6 +3,7 @@
     <oneColumnTemplate
       :projectTitle="projectTitle"
       :author="author"
+      :githubUrl="githubUrl"
       :pictures="pictures"
       :video="video"
       class="resized-image resized-video"
@@ -65,7 +66,6 @@
 
 <script>
 import oneColumnTemplate from "../../components/templates/oneColumnTemplate.vue";
-//import sampleImage from "../project_images/ProjectSampleImage.jpeg";
 import sampleImage from "../project_images/stocktraderpro1.jpeg";
 import sampleImage1 from "../project_images/stocktraderpro2.jpeg";
 import sampleImage2 from "../project_images/stocktraderpro3.jpeg";
@@ -80,6 +80,7 @@ export default {
     return {
       projectTitle: "StockTraderPro",
       author: "Aaryan Kapoor",
+      githubUrl: 'https://github.com/AaryanKapoor22/StockTraderPro',
       pictures: [sampleImage, sampleImage1, sampleImage2],
       video: sampleVideo, //get rid of the quotes when putting in your video variable
     };

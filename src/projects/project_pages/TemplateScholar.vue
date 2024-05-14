@@ -1,6 +1,6 @@
 <template>
     <div>
-      <twoColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+      <twoColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
         <template v-slot:description>
           <p>This program offers a one-stop shop for all academic needs. Whether it is automated formatting of 
             academic posters or helping you build a professional looking resume, Template Scholar has the resources 
@@ -48,6 +48,7 @@
       return {
         projectTitle: "Template Scholar",
         author: "Hannah Pfersch",
+        githubUrl: 'https://github.com/pferhan/Template-Scholar',
         pictures: [homepage_image, resume1_image, complete_resume],
         video: sampleVideo
       }

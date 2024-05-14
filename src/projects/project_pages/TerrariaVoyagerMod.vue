@@ -1,6 +1,6 @@
 <template>
   <div>
-    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
       <template v-slot:description>
         <p>The Terraria Mod project on GitHub, created by Andrew Labbe and Garrett Goldberg, 
           enhances the Terraria game by introducing new items, enemies, and biome.
@@ -58,6 +58,7 @@ export default {
     return {
       projectTitle: "Terraria Voyager Mod",
       author: "Garrett Goldberg & Andrew Labbe",
+      githubUrl: 'https://github.com/AndrewLabbe/Terraria-Mod',
       pictures: [modImageA, modImageB],
       video: sampleVideo //get rid of the quotes when putting in your video variable
     }

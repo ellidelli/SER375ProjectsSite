@@ -1,6 +1,6 @@
 <template>
     <div>
-      <twoColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+      <twoColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
         <template v-slot:description>
             <p>This is a Vue-based e-commerce website designed for business-to-consumer transactions. It allows consumers to browse through various products, view detailed product information, add items to their shopping cart, and proceed with the checkout process. The website aims to provide a user-friendly shopping experience, with features such as product search, product categories, and a responsive design for optimal viewing on different devices. Additionally, it incorporates Vue's reactive framework to efficiently manage state and update the UI in real-time, providing a seamless and interactive shopping experience for customers.</p>
         </template>
@@ -40,8 +40,9 @@
       return {
         projectTitle: "Ecommerce Site",
         author: "Bill Regan",
+        githubUrl: 'https://github.com/b-regan11/Ecommerce-Site',
         pictures: [homeImage, searchImage, cartImage],
-        video: [demoVideo] //get rid of the quotes when putting in your video variable
+        video: [demoVideo] 
       }
     },
     info: {

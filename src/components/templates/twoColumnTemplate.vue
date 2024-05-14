@@ -1,7 +1,10 @@
 <template>
     <div class="data">
-        <h1>{{ projectTitle }}</h1>
-        <h3>{{ author }}</h3>
+        <div class="header">
+            <h1>{{ projectTitle }}</h1>
+            <h3>by {{ author }}</h3>
+            <GitHubButton class="github-button" :GitHubUrl="githubUrl"/>
+        </div>
         <div class="container">
             <div class="left">
                 <h1>What is this project?</h1>
@@ -27,19 +30,20 @@
 </template>
 
 <script>
-import tags from '../tags.vue'
+import GitHubButton from '../GitHubButton.vue'
 
 export default {
     name: 'twoColumnTemplate',
     props: [
         'projectTitle',
         'author',
+        'githubUrl',
         'tags',
         'pictures',
         'video',
     ],
     components: {
-        tags
+        GitHubButton
     }
 }
 </script>
@@ -52,6 +56,21 @@ export default {
 .container {
     display: flex;
     flex-direction: row;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.github-button {
+  margin-bottom: 40px !important;
 }
 
 .left {

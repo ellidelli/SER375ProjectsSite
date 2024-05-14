@@ -1,6 +1,6 @@
 <template>
   <div>
-    <twoColumnTemplate :projectTitle="'Fitness Tracker App'" :author="'Kastrijot Syla'" :pictures="pictures" :video="video">
+    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
       <template v-slot:description>
         <p>Introducing the Fitness Tracker App—an all-in-one tool to help you crush your fitness goals! Whether you're tracking your macros, logging workouts, monitoring your weight, or staying on top of your progress, this app has got you covered.</p>
         <h3>High-Level Description</h3>
@@ -52,6 +52,7 @@ export default {
     return {
       projectTitle: "FitnessTrackerPro",
       author: "Kastrijot Syla",
+      githubUrl: 'https://github.com/rpekash/Fitness-Tracker-App',
       pictures: [sampleImage,sampleImage2],
       video: sampleVideo
     }
@@ -88,5 +89,10 @@ p {
 
 h1 {
   padding-bottom: 2vh;
+}
+
+ul {
+  color: white;
+  margin-bottom: 40px;
 }
 </style>

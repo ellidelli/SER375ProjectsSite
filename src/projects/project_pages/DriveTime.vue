@@ -1,6 +1,6 @@
 <template>
   <div>
-    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
       <template v-slot:description>
         <p>Drive Time is a productivity app to help you get to places on time. You can add tasks with time contraints, 
         and the app will add them all together and set a timer for the tasks. On the main page you can search for any location, 
@@ -55,6 +55,7 @@ export default {
     return {
       projectTitle: "DriveTime",
       author: "Mia Troiano",
+      githubUrl: 'https://github.com/miatroiano/AppProject',
       pictures: [DriveTime1, DriveTime2],
       video: DriveVideo 
     }

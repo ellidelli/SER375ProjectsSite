@@ -1,6 +1,6 @@
 <template>
   <div>
-    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
       <template v-slot:description>
         <p>
           Misty Foglands is a new dimension adding a few new items and blocks, meant to be accessed after The End. 
@@ -52,6 +52,7 @@ export default {
     return {
       projectTitle: "Misty Foglands",
       author: "Jacob Hogrefe",
+      githubUrl: 'https://github.com/jacobhogrefe/misty-foglands',
       pictures: [foglands_image, foglands_items],
       video: foglands_video //get rid of the quotes when putting in your video variable
     }

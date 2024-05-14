@@ -1,6 +1,6 @@
 <template>
   <div>
-    <oneColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+    <oneColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
       <template v-slot:description>
         <p>
           This is an iOS app for playing the party game “Mafia”.
@@ -76,8 +76,9 @@ export default {
     return {
       projectTitle: "Mafia App",
       author: "Sam Feld",
+      githubUrl: 'https://github.com/shmulif/Mafia',
       pictures: [sampleImage1, sampleImage2, sampleImage3, sampleImage4],
-      video: sampleVideo, //get rid of the quotes when putting in your video variable
+      video: sampleVideo
     };
   },
   info: {

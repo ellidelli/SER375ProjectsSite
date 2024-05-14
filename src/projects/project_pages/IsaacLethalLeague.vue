@@ -1,6 +1,6 @@
 <template>
   <div>
-    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
       <template v-slot:description>
         <p>A mod for The Binding of Isaac: Repentance that adds content inspired by Lethal League Blaze.
           [As of 4/27/24] Adds Candyman as a playable character, with a tainted variant, alongside 6 new items (with External Item Description compatibility).
@@ -48,8 +48,9 @@ export default {
     return {
       projectTitle: "Isaac Lethal League",
       author: "Marcus Ferreira",
+      githubUrl: 'https://github.com/doubleupdingo/Isaac-Lethal-League',
       pictures: [screen1, screen2],
-      video: video1 //get rid of the quotes when putting in your video variable
+      video: video1
     }
   },
   info: {

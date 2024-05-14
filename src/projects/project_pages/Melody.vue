@@ -1,6 +1,6 @@
 <template>
   <div>
-    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
       <template v-slot:description>
         <p>Melody is a social music platform designed to help music listeners track the music they love. Users with Spotify accounts
         can log into Melody and begin rating music right away. <br><br> The novelty is in the way Melody determines song ratings. 
@@ -48,8 +48,9 @@ export default {
     return {
       projectTitle: "Melody",
       author: "Anton Petrenko",
+      githubUrl: 'https://github.com/Anton-Petrenko/melody',
       pictures: [sampleImage],
-      video: sampleVideo //get rid of the quotes when putting in your video variable
+      video: sampleVideo
     }
   },
   info: {

@@ -3,6 +3,7 @@
     <oneColumnTemplate
       :projectTitle="projectTitle"
       :author="author"
+      :githubUrl="githubUrl"
       :pictures="pictures"
       :video="video"
     >
@@ -80,8 +81,9 @@ export default {
     return {
       projectTitle: "Trip Planner App",
       author: "Julia Woeste",
+      githubUrl: 'https://github.com/juliawoeste/Trip-Planner-iOS-App',
       pictures: [mainScreen, itinerary, packing, budget],
-      video: video, //get rid of the quotes when putting in your video variable
+      video: video
     };
   },
   info: {

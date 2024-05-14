@@ -1,6 +1,6 @@
 <template>
     <div>
-        <oneColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+        <oneColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
             <template v-slot:description>
                 <p>This project aims to balance and change Shulk in the Super Smash Bros. Ultimate
                     known as HDR. I did this by adding many more tools to his moveset that greatly impact
@@ -96,6 +96,7 @@ export default {
         return {
             projectTitle: "HDR Shulk Rework",
             author: "Jonathan Mason",
+            githubUrl: 'https://github.com/jpmason64/HDR-Shulk-Rework',
             pictures: [image_one, image_two],
             video: video //get rid of the quotes when putting in your video variable
         }

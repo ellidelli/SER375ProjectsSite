@@ -3,6 +3,7 @@
     <twoColumnTemplate
       :projectTitle="projectTitle"
       :author="author"
+      :githubUrl="githubUrl"
       :pictures="pictures"
       :video="video"
     >
@@ -70,6 +71,7 @@ export default {
     return {
       projectTitle: "Maze Chase Game",
       author: "Jay Salgado",
+      githubUrl: 'https://github.com/Jaysalgado/game',
       pictures: [sampleImage, sampleImage2],
       video: sampleVideo, 
     };

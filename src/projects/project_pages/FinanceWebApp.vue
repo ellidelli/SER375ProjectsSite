@@ -13,6 +13,7 @@ export default {
     return {
       projectTitle: "FinanceWebApp",
       author: "Alex Power",
+      githubUrl: 'https://github.com/alexpower9/option-selling-webapp',
       pictures: [sampleImage],
       video: realvid 
     }
@@ -27,7 +28,7 @@ export default {
 
 <template>
     <div>
-      <twoColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+      <twoColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
         <template v-slot:description>
           <p>This web app, intended to be a beginner project to learn underlying technologies such as Vue.js and Express, aimed 
             to replicate a paper trading app. The idea was use to use live market data and have people be able to make accounts. 

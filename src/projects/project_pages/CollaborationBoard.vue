@@ -1,6 +1,6 @@
 <template>
     <div>
-        <oneColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+        <oneColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
             <template v-slot:description>
                 <p>
                     Our application is a website that provides users with an all-in-one option for collaborative projects.
@@ -106,6 +106,7 @@ export default {
         return {
             projectTitle: "Collaboration Board",
             author: "Matthew Merritt and Michael Merritt",
+            githubUrl: 'https://github.com/mattcmerritt/Collaboration-Board',
             pictures: [boardImage, cardImage, chatImage],
             video: collabVideo
         }

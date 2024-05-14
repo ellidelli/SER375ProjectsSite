@@ -1,6 +1,6 @@
 <template>
     <div>
-        <slideshowTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+        <slideshowTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
             <template v-slot:slideshow>
                 <vueper-slides fade :touchable="false" class="slideshow">
                     <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" />
@@ -85,6 +85,7 @@ export default {
         return {
             projectTitle: "Minecraft Mod PN",
             author: "Philip nora",
+            githubUrl: 'https://github.com/PhilipN27/Forge1.19Mod',
             video: video, //get rid of the quotes when putting in your video variable
             slides: [
                 {

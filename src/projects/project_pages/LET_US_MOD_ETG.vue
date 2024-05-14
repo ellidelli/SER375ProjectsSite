@@ -1,6 +1,6 @@
 <template>
   <div>
-    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :pictures="pictures" :video="video">
+    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
       <template v-slot:description>
         <p>This is a mod for Enter the Gungeon titled Let Us Mod in the Gungeon.
           This mod consists of two mod packs, one that has weapons and items, the other has a custom character, both are
@@ -45,8 +45,9 @@ export default {
     return {
       projectTitle: "LET_US_MOD_ETG",
       author: "Riley Damasco",
+      githubUrl: 'https://github.com/DrabAdario/LET_US_MOD_ETG',
       pictures: [sampleImage],
-      video: sampleVideo //get rid of the quotes when putting in your video variable
+      video: sampleVideo
     }
   },
   info: {
