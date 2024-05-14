@@ -15,9 +15,6 @@ export default {
   components: {
     GitHubLogo
   },
-  mounted() {
-    console.log(this.GitHubUrl)
-  },
   props: {
     GitHubUrl: {
       type: String,
