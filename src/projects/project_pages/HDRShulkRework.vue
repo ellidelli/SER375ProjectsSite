@@ -97,7 +97,7 @@ export default {
             author: "Jonathan Mason",
             githubUrl: 'https://github.com/jpmason64/HDR-Shulk-Rework',
             pictures: [image_one, image_two],
-            video: video //get rid of the quotes when putting in your video variable
+            video: video
         }
     },
     info: {

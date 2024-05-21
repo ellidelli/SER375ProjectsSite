@@ -80,7 +80,7 @@ export default {
       author: "Aaryan Kapoor",
       githubUrl: 'https://github.com/AaryanKapoor22/StockTraderPro',
       pictures: [sampleImage, sampleImage1, sampleImage2],
-      video: sampleVideo, //get rid of the quotes when putting in your video variable
+      video: sampleVideo
     };
   },
   info: {

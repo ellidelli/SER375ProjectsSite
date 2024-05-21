@@ -51,7 +51,7 @@ export default {
       author: "Shankar Yellure",
       githubUrl: 'https://github.com/shankaryellure/HealthCare/',
       pictures: [sampleImage],
-      video: sampleVideo // get rid of the quotes when putting in your video variable
+      video: sampleVideo
     }
   },
   info: {

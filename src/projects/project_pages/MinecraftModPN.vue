@@ -78,7 +78,7 @@ export default {
             projectTitle: "Minecraft Mod PN",
             author: "Philip nora",
             githubUrl: 'https://github.com/PhilipN27/Forge1.19Mod',
-            video: video, //get rid of the quotes when putting in your video variable
+            video: video
             slides: [
                 {
                     image: one

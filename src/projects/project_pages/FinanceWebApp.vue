@@ -51,7 +51,7 @@ export default {
     am glad I went down the path of implementation that I did.</p>
         </template>
         <template v-slot:links>
-          <a style="padding-right:10px;" href="ca.finance.yahoo.com">Yahoo Finance</a>
+          <a href="ca.finance.yahoo.com">Yahoo Finance</a>
         </template>
       </twoColumnTemplate>
     </div>

@@ -22,7 +22,8 @@
          the app to have an alarm feature that would wake the user up on time, but that didn't happen because apple doesnt allow
          access to its "clock app" and there are very specific rules for notifications, so I couldnt have a notification play a sound long enough 
          to really be an alarm. I also ran into a lot of problems with MapKit, specifically getting map elements to be compatable with the variables I already had.
-          Once I was able to get a location request notification, using the users's location was easier.
+         <br><br>
+         Once I was able to get a location request notification, using the users's location was easier.
          With the user location I was able to search the surrounding area of the user for their selected location. 
          Since I had a start location (the user's current location) and an end location I was able to show the driving route. </p>
       </template>

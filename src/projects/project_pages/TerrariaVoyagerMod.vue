@@ -58,7 +58,7 @@ export default {
       author: "Garrett Goldberg & Andrew Labbe",
       githubUrl: 'https://github.com/AndrewLabbe/Terraria-Mod',
       pictures: [modImageA, modImageB],
-      video: sampleVideo //get rid of the quotes when putting in your video variable
+      video: sampleVideo
     }
   },
   info: {

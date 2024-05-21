@@ -51,7 +51,7 @@ export default {
       author: "Jacob Hogrefe",
       githubUrl: 'https://github.com/jacobhogrefe/misty-foglands',
       pictures: [foglands_image, foglands_items],
-      video: foglands_video //get rid of the quotes when putting in your video variable
+      video: foglands_video
     }
   },
   info: {

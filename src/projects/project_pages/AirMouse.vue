@@ -99,7 +99,7 @@ export default {
       author: "MacArthur Mills",
       githubUrl: 'https://github.com/mmills2/Air_Mouse',
       pictures: [UsingAirMouseImg, ClickInstructionsImg],
-      video: AirMouseVideo, //get rid of the quotes when putting in your video variable
+      video: AirMouseVideo
     };
   },
   info: {

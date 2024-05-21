@@ -63,7 +63,7 @@ export default {
       author: "Emily Balboni",
       githubUrl: 'https://github.com/eebalboni/CharacterCreator',
       pictures: [imgOne, imgTwo, imgThree],
-      video: charVideo //get rid of the quotes when putting in your video variable
+      video: charVideo
     }
   },
   info: {
