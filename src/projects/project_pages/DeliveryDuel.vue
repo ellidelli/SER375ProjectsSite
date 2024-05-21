@@ -9,8 +9,7 @@
         
             <template v-slot:description>
                 <p>
-                    Here's a brief description for your open source project:
-                    "Open Source" is a vibrant, competitive multiplayer adventure game designed for players who enjoy strategy and fast-paced action.
+                    "Delivery Duel" is a vibrant, competitive multiplayer adventure game designed for players who enjoy strategy and fast-paced action.
                     In this grid-based game, players race against each other to collect and deliver food items like pizzas and coffees to hungry NPCs, while also gathering coins to boost their scores.
                     Each game session presents a dynamic world with randomly placed items, NPCs, and obstacles, ensuring a unique experience every time.
                     Players can customize their avatars with distinctive chef outfits and engage in real-time interactions facilitated by Firebase.
@@ -91,6 +90,7 @@ export default {
     info: {
         title: 'Delivery Duel',
         author: 'Brian Wanamaker & Matt Nova',
+        summary: 'Multiplayer Web Game',
         tags: ["JavaScript", "Firebase", "Full Stack", "Multiplayer", "Spring 2024", "Game"]
     }
 }

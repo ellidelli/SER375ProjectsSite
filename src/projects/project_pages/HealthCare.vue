@@ -60,6 +60,7 @@ export default {
   info: {
     title: 'HealthCare',
     author: 'Shankar Yellure',
+    summary: 'Healthcare Mobile App',
     tags: ["Java", "Android", "Spring 2024"]
   }
 }

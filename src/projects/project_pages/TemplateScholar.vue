@@ -56,6 +56,7 @@
     info: {
       title: 'Template Scholar',
       author: 'Hannah Pfersch',
+      summary: 'Template Document Creator Website',
       tags: ["Vue", "HTML", "CSS", "JavaScript", "Academic", "Spring 2024"]
     }
   }

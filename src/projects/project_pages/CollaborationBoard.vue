@@ -114,6 +114,7 @@ export default {
     info: {
         title: 'Collaboration Board',
         author: 'Matthew Merritt and Michael Merritt',
+        summary: 'Collaboration Board Website',
         tags: ["React", "Next.js", "TypeScript", "JavaScript", "Full Stack", "Frontend", "Backend", "MongoDB", "WebSockets", "Real-Time Chat", "Kanban Board", "react-dnd", "Spring 2024"]
     }
 }

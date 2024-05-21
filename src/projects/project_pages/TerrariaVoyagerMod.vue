@@ -66,6 +66,7 @@ export default {
   info: {
     title: 'Terraria Voyager Mod',
     author: 'Garrett Goldberg & Andrew Labbe',
+    summary: 'Terraria Mod',
     tags: ["Game", "Game Modding", "Terraria", "Video Game", "Spring 2024"]
   }
 }

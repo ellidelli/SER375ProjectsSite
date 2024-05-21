@@ -84,6 +84,7 @@ export default {
   info: {
     title: "Mafia App",
     author: "Sam Feld",
+    summary: 'Mafia Game Mobile App',
     tags: ["Spring 2024", "iPhone", "iOS", "Swift", "SwiftUI", "Xcode", "Firebase", "Game", "Mafia", "Multiplayer"],
   },
 };

@@ -106,6 +106,7 @@ export default {
   info: {
     title: "Air Mouse",
     author: "MacArthur Mills",
+    summary: "Hand-Controlled Mouse",
     tags: [
       "Spring 2024",
       "Computer Vision",

@@ -60,6 +60,7 @@ export default {
   info: {
     title: 'Misty Foglands',
     author: 'Jacob Hogrefe',
+    summary: 'Minecraft Mod',
     tags: ["Minecraft", "Java", "Minecraft Fabric", "Game Modding", "Spring 2024"]
   }
 }

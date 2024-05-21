@@ -74,6 +74,7 @@ export default {
   info: {
     title: 'Character Creator',
     author: 'Emily Balboni',
+    summary: 'Character Creator Mobile App',
     tags: ["iOS", "Spring 2024", "Swift", "Creative Writing"]
   }
 }

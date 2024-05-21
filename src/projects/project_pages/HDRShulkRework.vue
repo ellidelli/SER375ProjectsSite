@@ -104,6 +104,7 @@ export default {
     info: {
         title: 'HDR Shulk Rework',
         author: 'Jonathan Mason',
+        summary: 'Super Smash Bros. Ultimate Mod',
         tags: ["Super Smash Bros. Ultimate", "Game Modding", "Rust", "Skyline", "Smashline", "Nintendo Switch", "Spring 2024"]
     }
 }

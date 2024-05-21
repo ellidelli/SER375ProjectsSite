@@ -51,6 +51,7 @@ export default {
     info: {
         title: 'SuppTrack',
         author: 'Taylor Lea',
+        summary: 'Nutrition Supplement Tracker Mobile App',
         tags: ["iOS", "Swift", "Firebase", "Barcode Scanner", "Spring 2024"]
     }
 }

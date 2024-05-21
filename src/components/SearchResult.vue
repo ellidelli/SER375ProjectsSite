@@ -3,6 +3,7 @@
     <router-link :to="projectRoute" class="search-result">
         <div class="result-info">
             <h3>{{ title }}</h3>
+            <p><em>{{ summary }}</em></p>
             <p>{{ author }}</p>
         </div>
     </router-link>
@@ -13,7 +14,7 @@ export default {
     props: {
         title: String,
         author: String,
-        display: String,
+        summary: String
     },
     data() {
         return {

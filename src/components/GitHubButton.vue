@@ -56,7 +56,7 @@ export default {
 .button:hover {
   background: rgba(255, 255, 255, 0.788);
   transition: .3s;
-  cursor: default;
+  cursor: pointer;
 }
 
 .label {

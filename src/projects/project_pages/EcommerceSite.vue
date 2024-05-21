@@ -48,6 +48,7 @@
     info: {
       title: 'Ecommerce Site',
       author: 'Bill Regan',
+      summary: 'Ecommerce Website',
       tags: ["CSS", "Frontend", "HTML", "JavaScript", "Node", "Pinia", "Spring 2024", "Vue", "Website"]
     }
   }

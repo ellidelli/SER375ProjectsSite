@@ -60,6 +60,7 @@ export default {
   info: {
     title: 'FitnessTrackerPro',
     author: 'Kastrijot Syla',
+    summary: 'Fitness Mobile App',
     tags: ["Fitness", "Workout", "Tracking", "iOS", "Spring 2024"]
   }
 }

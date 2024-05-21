@@ -59,6 +59,7 @@ export default {
   info: {
     title: 'MyLittleLibrary',
     author: 'Lauren Sloane',
+    summary: 'Books and Reading Focused Website',
     tags: ["Vue", "Website", "JavaScript", "CSS", "HTML", "Spring 2024"]
   }
 }

@@ -56,6 +56,7 @@ export default {
   info: {
     title: 'Melody',
     author: 'Anton Petrenko',
+    summary: 'Spotify Integrated Website',
     tags: ["Next.js", "Music", "React", "Spotify", "Spring 2024"]
   }
 }

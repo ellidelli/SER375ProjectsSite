@@ -88,6 +88,7 @@ export default {
   info: {
     title: "StockTraderPro",
     author: "Aaryan Kapoor",
+    summary: 'Stock Trading Mobile App',
     tags: ["SwiftUI", "Swift", "Xcode", "iOS", "iPhone", "Spring 2024", "Finance"],
   },
 };

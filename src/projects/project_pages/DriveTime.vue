@@ -63,6 +63,7 @@ export default {
   info: {
     title: 'Drive Time',
     author: 'Mia Troiano',
+    summary: 'Productivity Mobile App',
     tags: ["iOS", "SwiftUI", "Swift", "Apple MapKit", "Spring 2024"]
   }
 }

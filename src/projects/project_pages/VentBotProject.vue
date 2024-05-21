@@ -71,6 +71,7 @@ export default {
     info: {
         title: 'VentBotProject',
         author: 'Juliet Lombardi',
+        summary: 'Genshin Impact Discord Bot',
         tags: ["Discord Bot", "JavaScript", "Genshin Impact", "Spring 2024"]
     }
 }

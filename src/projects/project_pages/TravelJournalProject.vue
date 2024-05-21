@@ -71,6 +71,7 @@ export default {
     info: {
         title: 'Travel Journal Project',
         author: 'Gabby Pierce',
+        summary: 'Travel Journal Mobile App',
         tags: ["Travel", "Journal", "iOS", "Swift", "Spring 2024"]
     }
 }

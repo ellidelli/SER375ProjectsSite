@@ -89,6 +89,7 @@ export default {
     info: {
         title: 'Bias Sorter',
         author: 'Shannon Brickett',
+        summary: "K-Pop Bias Sorter Website",
         tags: ["Vue", "Website", "JavaScript", "HTML", "CSS", "Firebase", "Spring 2024"]
     }
 }

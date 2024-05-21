@@ -102,6 +102,7 @@ export default {
     info: {
         title: 'Minecraft Mod PN',
         author: 'Philip Nora',
+        summary: 'Minecraft Mod',
         tags: ["Minecraft", "Java", "Game Modding", "Spring 2024"]
     }
 }

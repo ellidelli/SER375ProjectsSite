@@ -56,6 +56,7 @@ export default {
   info: {
     title: 'Isaac Lethal League',
     author: 'Marcus Ferreira',
+    summary: 'The Binding of Isaac Mod',
     tags: ["Lua", "XML", "The Binding of Isaac", "Game Modding", "Video Game", "Spring 2024"]
   }
 }

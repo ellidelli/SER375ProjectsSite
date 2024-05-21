@@ -58,6 +58,7 @@ export default {
   info: {
     title: "Aidans Mod",
     author: "Aidan Mountain",
+    summary: "Minecraft Mod",
     tags: ["Minecraft", "Game Modding", "Hockey", "Java", "Spring 2024"],
   },
 };

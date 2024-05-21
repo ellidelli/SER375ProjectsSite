@@ -5,8 +5,7 @@
             <h1>Selected Tag:</h1>
             <p class="selected-tag" :style="{ backgroundColor: getTagColor(selectedTag) }">{{ selectedTag }}</p>
             <div class="results-container">
-                <SearchResult v-for="searchResult in searchResults" :key="searchResult" :title="searchResult.Title"
-                    :author="searchResult.Author" :display="searchResult.display" />
+                <SearchResult v-for="searchResult in searchResults" :key="searchResult" :title="searchResult.Title" :author="searchResult.Author" :summary="searchResult.summary" />
             </div>
         </div>
     </div>
@@ -35,7 +34,7 @@ export default {
                     matches.push({
                         Title: project.header.title,
                         Author: project.header.author,
-                        display
+                        summary: project.header.summary
                     });
                     cache.add(display);
                 }

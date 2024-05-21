@@ -89,6 +89,7 @@ export default {
   info: {
     title: "Trip Planner App",
     author: "Julia Woeste",
+    summary: 'Trip Planner Mobile App',
     tags: ["iOS", "Swift", "Xcode", "Travel", "Spring 2024"],
   },
 };

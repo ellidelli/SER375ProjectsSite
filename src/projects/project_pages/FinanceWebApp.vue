@@ -21,6 +21,7 @@ export default {
   info: {
     title: 'FinanceWebApp',
     author: 'Alex Power',
+    summary: 'Trading App Website',
     tags: ["Vue", "API", "Express", "Spring 2024", "Finance"]
   }
 }

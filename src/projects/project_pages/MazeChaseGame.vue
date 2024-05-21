@@ -79,6 +79,7 @@ export default {
   info: {
     title: "Maze Chase Game",
     author: "Jay Salgado",
+    summary: 'Multiplayer Unity Game',
     tags: ["Unity", "WebSockets", "React", "Express", "C#", "Netcode for gameobjects", "Game", "Multiplayer", "Spring 2024"],
   },
 };
