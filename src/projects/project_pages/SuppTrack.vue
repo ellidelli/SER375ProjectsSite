@@ -18,11 +18,8 @@
                     took a few tries to get that right.</p>
             </template>
             <template v-slot:links>
-                <div style="padding-bottom: 10vh;">
-                    <a href="https://github.com/Taylorlea43/SuppTrackSwtift">Github Repo</a><br>
-                    <a href="https://firebase.google.com/docs">Firebase Documentation</a><br>
-                    <a href="https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI">Carbode</a>
-                </div>
+                <a href="https://firebase.google.com/docs">Firebase Documentation</a>
+                <a href="https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI">Carbode (Barcode Scanner for iOS)</a>
             </template>
         </twoColumnTemplate>
     </div>

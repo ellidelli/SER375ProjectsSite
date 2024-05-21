@@ -41,9 +41,7 @@
                 </p>
             </template>
             <template v-slot:links>
-                <div style="padding-bottom: 10vh;">
-                    <a href="https://www.youtube.com/watch?v=xhURh2RDzzg&feature=youtu.be">Creator</a>
-                </div>
+                <a href="https://www.youtube.com/watch?v=xhURh2RDzzg&feature=youtu.be">Original Creator's Video of Game (before we expanded on it)</a>
             </template>
         </slideshowTemplate>
     </div>

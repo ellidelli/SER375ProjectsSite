@@ -42,18 +42,10 @@
                 </p>
             </template>
             <template v-slot:links>
-                <div style="padding-bottom: 10vh;">
-                    <a href="https://www.youtube.com/watch?v=LpoSy091wYI">google</a>
-                </div>
-                <div style="padding-bottom: 10vh;">
-                    <a href="https://www.reddit.com/r/CreateMod/comments/12y9hc1/create_mod_ore_distributions/">google</a>
-                </div>
-                <div style="padding-bottom: 10vh;">
-                    <a href="https://discord.gg/UvedJ9m">google</a>
-                </div>
-                <div style="padding-bottom: 10vh;">
-                    <a href="https://forums.minecraftforge.net/">google</a>
-                </div>
+                <a href="https://www.youtube.com/watch?v=LpoSy091wYI">Minecraft Modding Tutorial</a>
+                <a href="https://www.reddit.com/r/CreateMod/comments/12y9hc1/create_mod_ore_distributions/">Create Ore Mod Q&A</a>
+                <a href="https://discord.gg/UvedJ9m">Minecraft Modding Discord</a>
+                <a href="https://forums.minecraftforge.net/">Minecraft Modding Forums</a>
             </template>
         </slideshowTemplate>
     </div>

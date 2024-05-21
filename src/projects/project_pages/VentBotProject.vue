@@ -40,7 +40,7 @@
                 </p>
             </template>
             <template v-slot:links>
-                <a href="https://github.com/jilombardi/VentBot">github</a>
+                <a href="https://discordpy.readthedocs.io/en/stable/discord.html">Discord Bot Creation Tutorial</a>
             </template>
         </oneColumnTemplate>
     </div>
@@ -48,11 +48,9 @@
     
 <script>
 import oneColumnTemplate from '../../components/templates/oneColumnTemplate.vue';
-import sampleImage from '../project_images/ProjectSampleImage.jpeg';
 import chrCommandImage from '../project_images/VentBot_characterCommand.png';
 import domainCommandImage from '../project_images/VentBot_domainCommand.png';
 import showcaseVideo from '../project_videos/VentBotShowcaseVideo.mp4'
-// import sampleVideo from '../project_videos/<VIDEO TITLE>'
 
 export default {
     name: 'VentBotProject.vue',
@@ -65,7 +63,7 @@ export default {
             author: "Juliet Lombardi",
             githubUrl: 'https://github.com/jilombardi/VentBot',
             pictures: [chrCommandImage, domainCommandImage],
-            video: showcaseVideo //get rid of the quotes when putting in your video variable
+            video: showcaseVideo
         }
     },
     info: {

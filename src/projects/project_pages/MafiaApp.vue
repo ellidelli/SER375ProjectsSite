@@ -50,10 +50,9 @@
         </p>
       </template>
       <template v-slot:links>
-        <a href="https://github.com/shmulif/Mafia.git">github_repo</a>
-        <a href="https://firebase.google.com/docs">firebase_docs</a>
-        <a href="https://www.youtube.com/@SwiftfulThinking">swiftful_thinking_channel</a>
-        <a href="https://www.youtube.com/playlist?list=PLwvDm4Vfkdphl8ly0oi0aHx0v2B7UvDK0">swift_firebase_playlist</a>
+        <a href="https://firebase.google.com/docs">Firebase Docs</a>
+        <a href="https://www.youtube.com/@SwiftfulThinking">Swiftful Thinking Channel</a>
+        <a href="https://www.youtube.com/playlist?list=PLwvDm4Vfkdphl8ly0oi0aHx0v2B7UvDK0">Swift Firebase Tutorial Playlist</a>
       </template>
     </oneColumnTemplate>
   </div>

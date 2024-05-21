@@ -12,7 +12,7 @@
                     down from this and "regular" is all of the other people this fan likes. The categories don't have
                     to be these, though. For example, a fan may have a category called "Birthday Twins", composed of
                     those who share a birthday with the fan.
-                    <br><br>
+                    
                     The website contains features other than just sorting biases, which can be read about on the site's
                     help page.
                 </p>
@@ -25,7 +25,7 @@
                     categories I created. I ran into an issue where I would add someone to one sheet and forget to
                     add them to the other sheet. I thought to myself, "I wish this could just be automated!" This
                     was at the same time we had to think of an idea for this project. So that's what I decided to do!
-                    <br><br>
+                    
                     In order to make this project, I used the Vue framework, which makes it easier to use HTML, CSS, and
                     JavaScript. My earlier workplans were creating the bare bones of the website with just HTML, CSS,
                     and basic JavaScript. Then halfway through, I transitioned over to the Vue framework. That's when I
@@ -43,22 +43,17 @@
                     and let the user's data be based on the browser's local storage, but luckily I was able to figure it
                     out. Now, a user can log-in to their account on separate browsers and devices and keep their data.
                     <b>Tip: <i>Don't</i> use the Vuefire API!!!</b>
-                    <br><br>
+                    
                     Once I was able to get the users to work, that was a big win! My website was finally completed other
                     than little details and extra stuff that I wanted to add.
                 </p>
             </template>
             <template v-slot:links>
-                <div style="padding-bottom: 10vh;">
-                    <a href="https://shanbrick.github.io/Bias-Sorter/">The Website!!!</a><br>
-                    <a href="https://github.com/shanbrick/Bias-Sorter">Github Repo</a><br>
-                    <a href="https://chromewebstore.google.com/detail/sheets-to-json/enmkalgdnmcaljdfkojckdbhkjmffmoa">Spreadsheet
-                        to JSON - Google Sheet Extension</a><br>
-                    <a href="https://www.w3schools.com">Lots of HTML, CSS, JS formatting help!!!</a><br>
-                    <a href="https://sortablejs.github.io/Vue.Draggable/#/simple">Draggable Vue components</a><br>
-                    <a href="https://www.youtube.com/watch?v=WRqEx2kIbaM&ab_channel=ArtofEngineer">Setting up Firebase
-                        in Vue project.</a>
-                </div>
+                <a href="https://shanbrick.github.io/Bias-Sorter/">The Live Website!!!</a>
+                <a href="https://chromewebstore.google.com/detail/sheets-to-json/enmkalgdnmcaljdfkojckdbhkjmffmoa">Convert Excel Spreadsheet to JSON - Google Sheet Extension</a>
+                <a href="https://www.w3schools.com">Lots of HTML, CSS, JS formatting help!!!</a>
+                <a href="https://sortablejs.github.io/Vue.Draggable/#/simple">Draggable Vue components</a>
+                <a href="https://www.youtube.com/watch?v=WRqEx2kIbaM&ab_channel=ArtofEngineer">Setting up Firebase in a Vue project.</a>
             </template>
         </twoColumnTemplate>
     </div>

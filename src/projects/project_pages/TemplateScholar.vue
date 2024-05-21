@@ -24,9 +24,7 @@
           </p>”
         </template>
         <template v-slot:links>
-          <div style="padding-bottom: 10vh;">
-            <a href="https://github.com/pferhan/Template-Scholar">GitHub Repository</a>
-          </div>
+          <a href="https://vuejs.org/tutorial/#step-1">Vue Getting Started Tutorial</a>
         </template>
       </twoColumnTemplate>
     </div>

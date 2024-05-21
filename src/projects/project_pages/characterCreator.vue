@@ -33,18 +33,13 @@
           Although, the big win here was being able to pull this project together in a short amount of time.</p>
       </template>
       <template v-slot:links>
-        <div style="padding-bottom: 10vh;">
-          <a
-            href="https://www.hackingwithswift.com/quick-start/swiftui/how-to-let-users-select-pictures-using-photospicker">PhotoPicker</a>
-          <br>
-          <a href="https://gist.github.com/nikitamounier/299e6083d2f0554b48173b2361bef4ad">ProfileImage Class Source</a>
-          <br>
-          <a href="https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation">Apple Documentation for
-            Lists</a>
-          <br>
-          <a href="https://developer.apple.com/tutorials/swiftui/interfacing-with-uikit">Apple Documentation for
-            UIKits</a>
-        </div>
+        <a href="https://www.hackingwithswift.com/quick-start/swiftui/how-to-let-users-select-pictures-using-photospicker">PhotoPicker</a>
+        
+        <a href="https://gist.github.com/nikitamounier/299e6083d2f0554b48173b2361bef4ad">ProfileImage Class Source</a>
+        
+        <a href="https://developer.apple.com/tutorials/swiftui/building-lists-and-navigation">Apple Documentation for Lists</a>
+        
+        <a href="https://developer.apple.com/tutorials/swiftui/interfacing-with-uikit">Apple Documentation for UIKits</a>
       </template>
     </twoColumnTemplate>
   </div>

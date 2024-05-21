@@ -59,7 +59,6 @@
         </p>
       </template>
       <template v-slot:links>
-        <a href="https://github.com/mmills2/Air_Mouse">Air Mouse Github</a>
         <a
           href="https://developers.google.com/mediapipe/solutions/vision/gesture_recognizer"
           >Gesture recognizer library</a

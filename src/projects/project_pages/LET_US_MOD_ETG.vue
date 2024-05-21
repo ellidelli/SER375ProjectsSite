@@ -23,9 +23,7 @@
           fixed!</p>
       </template>
       <template v-slot:links>
-        <div style="padding-bottom: 10vh;">
-          <a href="https://github.com/DrabAdario/LET_US_MOD_ETG">GitHub</a>
-        </div>
+        <a href=" https://mtgmodders.gitbook.io/etg-modding-guide/getting-started/mod-etg-installation">Enter the Gungeon Modding Guide</a>
       </template>
     </twoColumnTemplate>
   </div>

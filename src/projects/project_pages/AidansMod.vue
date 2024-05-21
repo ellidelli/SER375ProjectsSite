@@ -29,8 +29,7 @@
         </p>
       </template>
       <template v-slot:links>
-        <a href="https://github.com/AidanMountain/AidansMod.git">Aidans Mod GitHub</a>
-        <a href="https://www.youtube.com/watch?v=55qUIf3GMss&list=PLKGarocXCE1H9Y21-pxjt5Pt8bW14twa-">Tutorial</a>
+        <a href="https://www.youtube.com/watch?v=55qUIf3GMss&list=PLKGarocXCE1H9Y21-pxjt5Pt8bW14twa-">Minecraft Modding Tutorial</a>
       </template>
     </oneColumnTemplate>
   </div>

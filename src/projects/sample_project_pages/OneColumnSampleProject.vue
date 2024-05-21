@@ -32,7 +32,8 @@
         </p>
       </template>
       <template v-slot:links>
-        <a href="https://www.google.com">google</a>
+        <a href="https://www.google.com">Google</a>
+        <a href="https://www.qu.edu">Quinnipiac</a>
       </template>
     </oneColumnTemplate>
   </div>

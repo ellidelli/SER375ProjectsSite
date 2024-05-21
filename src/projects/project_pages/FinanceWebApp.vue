@@ -51,10 +51,7 @@ export default {
     am glad I went down the path of implementation that I did.</p>
         </template>
         <template v-slot:links>
-          <div style="padding-bottom: 10vh;">
-            <a style="padding-right:10px;" href="ca.finance.yahoo.com">Yahoo Finance</a>
-            <a href="https://github.com/alexpower9/option-selling-webapp.git">GitHub Repo</a>
-          </div>
+          <a style="padding-right:10px;" href="ca.finance.yahoo.com">Yahoo Finance</a>
         </template>
       </twoColumnTemplate>
     </div>

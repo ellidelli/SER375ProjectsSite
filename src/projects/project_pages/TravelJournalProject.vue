@@ -26,9 +26,7 @@
                     a new language and be able to work with open source projects. </p>
             </template>
             <template v-slot:links>
-                <div style="padding-bottom: 10vh;">
-                    <a href="https://github.com/dytlabs/TravelJournal">google</a>
-                </div>
+                <a href="https://github.com/dytlabs/TravelJournal">Example Travel App</a>
             </template>
         </slideshowTemplate>
     </div>

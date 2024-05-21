@@ -3,9 +3,9 @@
     <twoColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
       <template v-slot:description>
         <p>Melody is a social music platform designed to help music listeners track the music they love. Users with Spotify accounts
-        can log into Melody and begin rating music right away. <br><br> The novelty is in the way Melody determines song ratings. 
+        can log into Melody and begin rating music right away.  The novelty is in the way Melody determines song ratings. 
         Commonly, users are asked to rate the song on a numeric scale. However, Melody finds songs you have already rated and forces you to pick them against eachother - resulting in a fun
-        user experience. Melody then assigns a rating on a 0.0-10.0 scale for you based on your choices.<br><br>
+        user experience. Melody then assigns a rating on a 0.0-10.0 scale for you based on your choices.
         Additionally, Melody has a social aspect where friends can connect with eachother and see their ratings of songs as well. 
         </p>
       </template>
@@ -17,18 +17,14 @@
         <p>This was my first time using NextJS, NextAuth (for session management), and honestly React. It was also my first large web-app.
         NextJS particularly has alot of interesting caveats with server-side and client-side rendering having to be explicitly specified.
         Authentication using the Spotfiy API was also something that took a large chunk of time. Overall, I'm glad I chose this project
-        because it gave me a good experience in creating web applications and the logic of web development. However, due to learning so many new things, Melody is still not in a fully realized state (5/1/24).<br><br>
+        because it gave me a good experience in creating web applications and the logic of web development. However, due to learning so many new things, Melody is still not in a fully realized state (5/1/24).
         The app is currently in development, and some of the features described may not be implemented. The link to
         the Vercel-hosted website is below. Please note that this project is still in development and updates to the project may break
         the website until further update.
         </p>
       </template>
       <template v-slot:links>
-        <div style="padding-bottom: 10vh;">
-          <a href="https://melody-kappa-five.vercel.app/">Website (in development)</a>
-          <span> - </span>
-          <a href="https://github.com/Anton-Petrenko/melody">GitHub</a>
-        </div>
+        <a href="https://melody-kappa-five.vercel.app/">Live Website (in development)</a>
       </template>
     </twoColumnTemplate>
   </div>

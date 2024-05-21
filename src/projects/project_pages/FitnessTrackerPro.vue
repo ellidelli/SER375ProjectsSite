@@ -25,18 +25,12 @@
         <p>One of the biggest victories was successfully implementing the core features of the app and presenting a functional prototype during class demonstrations. It was rewarding to see our efforts translate into a tangible product that showcased our skills and creativity.</p>
       </template>
       <template v-slot:links>
-        <div style="padding-bottom: 10vh;">
-          <a href="https://github.com/rpekash/Fitness-Tracker-App">Download the app</a>
-        </div>
+        <a href="https://developer.apple.com/documentation/">Apple Developer Documentation</a>
       </template>
     </twoColumnTemplate>
   </div>
 </template>
 
-
-
-
-  
 <script>
 import twoColumnTemplate from '../../components/templates/twoColumnTemplate.vue'
 import sampleImage from '../project_images/iosphone.png';

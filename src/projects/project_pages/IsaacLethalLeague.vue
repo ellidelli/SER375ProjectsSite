@@ -20,14 +20,12 @@
           Not every aspect of the mod was this complex though, and the game has an active modding community that was wonderful to refer to.</p>
       </template>
       <template v-slot:links>
-        <div style="padding-bottom: 10vh;">
-          <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3233922664">Steam Workshop Page</a>
-          <a href="https://repentogon.com/index.html">REPENTOGON</a>
-          <a href="https://wofsauge.github.io/IsaacDocs/rep/">Isaac Lua API Documentation</a>
-          <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=836319872">External Item Descriptions Steam Workshop Page</a>
-          <a href="https://store.steampowered.com/app/1426300/The_Binding_of_Isaac_Repentance/">The Binding of Isaac: Repentance</a>
-          <a href="https://store.steampowered.com/app/553310/Lethal_League_Blaze/">Lethal League Blaze</a>
-        </div>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3233922664">Steam Workshop Page</a>
+        <a href="https://repentogon.com/index.html">REPENTOGON</a>
+        <a href="https://wofsauge.github.io/IsaacDocs/rep/">Isaac Lua API Documentation</a>
+        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=836319872">External Item Descriptions Steam Workshop Page</a>
+        <a href="https://store.steampowered.com/app/1426300/The_Binding_of_Isaac_Repentance/">The Binding of Isaac: Repentance</a>
+        <a href="https://store.steampowered.com/app/553310/Lethal_League_Blaze/">Lethal League Blaze</a>
       </template>
     </twoColumnTemplate>
   </div>

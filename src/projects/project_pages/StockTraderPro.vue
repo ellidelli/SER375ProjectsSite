@@ -51,10 +51,8 @@
         </p>
       </template>
       <template v-slot:links>
-        <a href="https://github.com/AaryanKapoor22/StockTraderPro"
-          >StockTraderPro GitHub</a
-        >
-        <p>
+        <a href="https://developer.apple.com/documentation/">Apple Developer Documentation</a>
+        <p style="margin-top: 20px;">
           License StockTraderPro is open-source and is licensed under the MIT
           License. For more information, please see the LICENSE file. Happy
           Trading!

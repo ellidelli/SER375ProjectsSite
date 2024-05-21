@@ -35,9 +35,7 @@
           </p>
       </template> 
       <template v-slot:links>
-        <div style="padding-bottom: 10vh;">
-          <a href="https://github.com/AndrewLabbe/Terraria-Mod">View the Project on GitHub</a>
-        </div>
+        <a href="https://store.steampowered.com/about/download">Install Steam</a>
       </template>
     </twoColumnTemplate>
   </div>

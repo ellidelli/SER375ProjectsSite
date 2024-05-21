@@ -43,13 +43,13 @@
       </template>
       <template v-slot:links>
         <div>
-          <a href="https://docs-multiplayer.unity3d.com/netcode/current/about/">Netcode for gameobjects</a>
+          <a href="https://docs-multiplayer.unity3d.com/netcode/current/about/">Netcode for Unity GameObjects</a>
         </div>
         <div>
           <a href="https://learn.unity.com/?_gl=1%2Ah530y3%2A_gcl_aw%2AR0NMLjE2MzY3MTY5ODMuQ2p3S0NBaUF2cmlNQmhBdUVpd0E4Q3M1bGFJenM2UXZhV2RxendXU3cwSUlFN3ZYLXBrLTgySU50QWRTTk5acEl4dThCUGZPMnBFeTFSb0M5ZDhRQXZEX0J3RQ..%2A_gcl_dc%2AR0NMLjE2MzY3MTY5ODMuQ2p3S0NBaUF2cmlNQmhBdUVpd0E4Q3M1bGFJenM2UXZhV2RxendXU3cwSUlFN3ZYLXBrLTgySU50QWRTTk5acEl4dThCUGZPMnBFeTFSb0M5ZDhRQXZEX0J3RQ..&_ga=2.182193959.1225568882.1643885899-337911776.1601136010">Learn Unity</a>
         </div>
         <div>
-          <a href="https://socket.io/">Websocket library used</a>
+          <a href="https://socket.io/">Websocket Library</a>
         </div>
       </template>
     </twoColumnTemplate>

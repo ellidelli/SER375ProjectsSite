@@ -17,7 +17,9 @@
       </div>
       <video :src="video" controls></video>
       <h1>Helpful Links</h1>
-      <slot name="links"></slot>
+      <div class="helpful-links">
+        <slot name="links"></slot>
+      </div>
     </div>
   </div>
 </template>
@@ -86,6 +88,13 @@ video {
 
 .left p {
   max-width: 90%;
+}
+
+.helpful-links {
+  padding-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 h1,

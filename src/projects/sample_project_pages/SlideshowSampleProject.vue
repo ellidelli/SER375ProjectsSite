@@ -22,9 +22,8 @@
                     a, commodi debitis! Ducimus.</p>
             </template>
             <template v-slot:links>
-                <div style="padding-bottom: 10vh;">
-                    <a href="https://www.google.com">google</a>
-                </div>
+                <a href="https://www.google.com">Google</a>
+                <a href="https://www.qu.edu">Quinnipiac</a>
             </template>
         </slideshowTemplate>
     </div>

@@ -28,11 +28,8 @@
         </p>
       </template>
       <template v-slot:links>
-        <div style="padding-bottom: 10vh;" class="links-container">
-          <a href="https://www.youtube.com/watch?v=JSwRqOZo2Y8">YouTube</a>
-          <a href="https://developer.android.com/studio">Android Studio</a>
-          <a href="https://github.com/shankaryellure/HealthCare.git">GitHub</a>
-        </div>
+        <a href="https://www.youtube.com/watch?v=JSwRqOZo2Y8">Android Studio Tutorial</a>
+        <a href="https://developer.android.com/studio">Android Studio Dowwnload</a>
       </template>
     </twoColumnTemplate>∏
   </div>

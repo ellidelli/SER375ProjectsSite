@@ -26,12 +26,9 @@
         </p>
       </template>
       <template v-slot:links>
-        <div style="padding-bottom: 10vh;">
-          <a href="https://github.com/jacobhogrefe/misty-foglands">GitHub Link</a>
-          <a href="https://moddingtutorials.org/1.18.2/world-gen/">World Generation Discord Link</a>
-          <a href="https://discord.com/invite/v6v4pMv">Fabric Discord</a>
-          <a href="https://youtube.com/playlist?list=PLKGarocXCE1ECgBI1_Z_Yr4qMdhjVi3kg&si=BMmNDDIH_Q2Nrlbf">Modding Playlist I Used</a>
-        </div>
+        <a href="https://moddingtutorials.org/1.18.2/world-gen/">World Generation Discord Link</a>
+        <a href="https://discord.com/invite/v6v4pMv">Fabric Discord</a>
+        <a href="https://youtube.com/playlist?list=PLKGarocXCE1ECgBI1_Z_Yr4qMdhjVi3kg&si=BMmNDDIH_Q2Nrlbf">Modding Tutorial Playlist I Used</a>
       </template>
     </twoColumnTemplate>
   </div>

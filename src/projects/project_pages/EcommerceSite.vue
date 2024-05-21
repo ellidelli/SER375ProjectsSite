@@ -15,10 +15,7 @@
             <p>I think that the big win I had for Vue was getting the cart to function using the Pinia store. Getting this to work was huge for me because it took multiple work cycles to overcome this. My strategy for getting this to work was the same strategy I used throughout this project. I spent as much time as I can trying to figure out the problem utilizing online tutorials and trying to figure it out myself. If I still couldn't figure it out, I'd ask someone with more experience for help. If that didn't work, I'd make a judgement call to either come back to the problem later or try it again. Either decision made in that judgement call proved well for me in the end.</p>
         </template>
         <template v-slot:links>
-            <div style="padding-bottom: 10vh;">
-                <a href="https://b-regan11.github.io/Ecommerce-Site/ ">Live Webpage</a> | 
-                <a href="https://github.com/b-regan11/Ecommerce-Site ">GitHub Repo</a>
-            </div>
+          <a href="https://b-regan11.github.io/Ecommerce-Site/ ">Live Website</a> | 
         </template>
       </twoColumnTemplate>
     </div>

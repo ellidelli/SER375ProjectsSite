@@ -24,13 +24,9 @@
           web browser.</p>
       </template>
       <template v-slot:links>
-        <div style="padding-bottom: 10vh;">
-          <a href="https://openlibrary.org/dev/docs/api/search">Open Library API</a>
-          <br>
-          <a href="https://github.com/sloanelauren/MyLittleLibrary">GitHub Repository</a>
-          <br>
-          <a href="https://www.goodreads.com/">Goodreads</a>
-        </div>
+        <a href="https://openlibrary.org/dev/docs/api/search">Open Library API</a>
+        
+        <a href="https://www.goodreads.com/">Goodreads</a>
       </template>
     </twoColumnTemplate>
   </div>

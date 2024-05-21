@@ -48,14 +48,17 @@
           >Code with Chris was super helpful as he was able to explain things
           very well.
         </a>
+        
         <a href="https://www.youtube.com/@SwiftfulThinking"
           >This YouTube Channel was also very helpful in learning Swift and
           XCode in general.</a
         >
+        
         <a href="https://www.youtube.com/watch?v=CcUgRDLcUmQ&t=1783s"
           >This video helped me with SwiftData and putting data into lists as
           well as checking off an item in a list.</a
         >
+        
         <a href="https://developer.apple.com/documentation/swift"
           >This is Apple's documentation for Swift.</a
         >

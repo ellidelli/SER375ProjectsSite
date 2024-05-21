@@ -69,12 +69,11 @@
                 </p>
             </template>
             <template v-slot:links>
-                <a href="https://github.com/jpmason64/HDR-Shulk-Rework">Github</a>
-                <a href="https://www.youtube.com/watch?v=02NaFwNcC3M&list=PLJ8C0Hk2ZKHvxjfFylRUIbVnDUvxLdejh">Smash Ultimate Modding Workshop</a>
-                <a href="https://discord.gg/hdr">HDR Discord</a>
+                <a href="https://www.youtube.com/watch?v=02NaFwNcC3M&list=PLJ8C0Hk2ZKHvxjfFylRUIbVnDUvxLdejh">Smash Ultimate Modding Workshop Tutorial</a>
+                <a href="https://discord.gg/hdr">Smash Ultimate HDR Mod Discord</a>
                 <a href="https://discord.gg/ASJyTrZ">Smash Ultimate Modding Discord</a>
-                <a href="https://raw.githubusercontent.com/ultimate-research/param-labels/master/ParamLabels.csv">Param Tables</a>
-                <a href="https://docs.google.com/spreadsheets/d/1q_TpWoQkr9YWgQ7fc3JpHuU9zKfCLtl80Uodcyc0NPY/edit#gid=0">Animation Labels</a>
+                <a href="https://raw.githubusercontent.com/ultimate-research/param-labels/master/ParamLabels.csv">Smash Ultimate Param Tables</a>
+                <a href="https://docs.google.com/spreadsheets/d/1q_TpWoQkr9YWgQ7fc3JpHuU9zKfCLtl80Uodcyc0NPY/edit#gid=0">Smash Ultimate Animation Labels</a>
                 <a href="https://github.com/WuBoytH/SSBU-Dumped-Scripts">Smash Ultimate Script Dumps</a>
             </template>
         </oneColumnTemplate>
