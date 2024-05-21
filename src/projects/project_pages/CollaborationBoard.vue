@@ -25,7 +25,7 @@
                     assets were finalized and ready to be added to the final build, and writers not being able to find if
                     character sprites were updated. With these issues in mind, we set out to create an application that
                     could help us resolve these issues.
-                    <br>
+                    <br><br>
                     To make this project, we focused on learning the basics of full-stack web development and spent a couple
                     weeks early on working with a variety of frontend web frameworks such as React, Remix, and Next.js to
                     determine which one would work best for our application. After two weeks of testing, we ultimately found
@@ -55,7 +55,7 @@
                     an effect so that the functionality would adapt to changes in the application data. Once we had this
                     properly configured, we could then pass states and refs between components, allowing data to be shared
                     across the application.
-                    <br>
+                    <br><br>
                     Another struggle that we ran into was related to dragging and dropping elements in React. We had started
                     by trying to implement drag-and-drop functionality on our own but found that it was a much more
                     complicated task than we had initially perceived. To simplify the development process, we decided to
@@ -65,7 +65,7 @@
                     open-source packages to resolve the issue, this time searching for a solution that supported both
                     dragging and dropping. Eventually we settled on using react-dnd, as it had built-in drag and drop
                     listeners that fired events that we could easily use to send messages to reorder cards on the backend.
-                    <br>
+                    <br><br>
                     The final challenge that we faced this semester was with our database design. We initially began with a
                     relational database using PostgreSQL, and this worked for a system with only cards, columns, and chat
                     messages with a minimal number of joins between tables. However, as we planned to add more features to
