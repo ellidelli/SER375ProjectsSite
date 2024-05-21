@@ -61,6 +61,7 @@ export default {
   info: {
     title: "One Column Sample Project",
     author: "John Smith",
+    summary: "Example Project",
     tags: ["Sample", "Templates", "Open Source", "Help", "Spring 2024"],
   },
 };
