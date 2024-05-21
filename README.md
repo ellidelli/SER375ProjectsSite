@@ -80,7 +80,7 @@ Choose between the 3 different templates.
    ```
 6. In this section of code:
    * Replace the name: with your project name (the same as your vue file)
-   * Replace all information under data() to match your project
+   * Replace all information under `data()` to match your project
    * When it comes to multiple pictures, just add them to the array [just, like, this]
    * Add your name to the author field
    * Everything under the info section is metadata for your page to show up in the website's search, so please fill out those fields accordingly
@@ -98,6 +98,7 @@ Choose between the 3 different templates.
         return {
           projectTitle: "Two Column Sample Project",
           author: "John Smith",
+          githubUrl: 'www.github.com',
           pictures: [sampleImage],
           video: sampleVideo
         }
@@ -175,6 +176,7 @@ import sampleVideo from '../project_videos/sample.mp4'
         return {
             projectTitle: "Slideshow Sample Project",
             author: "John Smith",
+            githubUrl: 'www.github.com',
             video: sampleVideo
             slides: [
                 {
