@@ -13,6 +13,10 @@
                 <slot name="story"> </slot>
                 <h1>Struggles and Triumphs</h1>
                 <slot name="strugglesAndTriumphs"> </slot>
+                <h1>Helpful Links</h1>
+                <div class="helpful-links">
+                    <slot name="links"></slot>
+                </div>
             </div>
             <div class="right">
                 <div v-for="(picture, index) in pictures" :key="index">
@@ -23,10 +27,6 @@
                 </div>
             </div>
 
-        </div>
-        <h1>Helpful Links</h1>
-        <div class="helpful-links">
-            <slot name="links"></slot>
         </div>
     </div>
 </template>
