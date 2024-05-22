@@ -7,8 +7,7 @@
       <button class="page-button" @click="nextPage">&gt;</button>
     </div>
     <div class="projects">
-      <SearchResult v-for="project in getProjectsOnPage()" :key="project" :title="project.header.title"
-        :author="project.header.author" :display="project.header.display" />
+      <SearchResult v-for="project in getProjectsOnPage()" :key="project" :title="project.header.title" :author="project.header.author" :summary="project.header.summary" />
     </div>
     <div class="paging-container">
       <button class="page-button" @click="prevPage">&lt;</button>

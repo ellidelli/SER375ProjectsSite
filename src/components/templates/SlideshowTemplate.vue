@@ -1,7 +1,10 @@
 <template>
     <div class="data">
-        <h1>{{ projectTitle }}</h1>
-        <h3>{{ author }}</h3>
+        <div class="header">
+            <h1>{{ projectTitle }}</h1>
+            <h3>by {{ author }}</h3>
+            <GitHubButton class="github-button" :GitHubUrl="githubUrl"/>
+        </div>
         <slot name="slideshow"></slot>
         <div class="container">
             <div class="left">
@@ -17,25 +20,25 @@
         </div>
         <video :src="video" controls></video>
         <h1>Helpful Links</h1>
-        <slot name="links"></slot>
+        <div class="helpful-links">
+            <slot name="links"></slot>
+        </div>
     </div>
 </template>
 
 <script>
 import 'vueperslides/dist/vueperslides.css'
-import tags from '../tags.vue'
+import GitHubButton from '../GitHubButton.vue'
 
 export default {
-    components: { tags },
+    components: { 
+       GitHubButton 
+    },
     props: [
-        'backgroundColor',
         'projectTitle',
         'author',
+        'githubUrl',
         'tags',
-        'description',
-        'story',
-        'struggles',
-        'triumphs',
         'pictures',
         'video',
     ]
@@ -50,6 +53,17 @@ export default {
 .container {
     display: flex;
     flex-direction: row;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .left {
@@ -74,6 +88,13 @@ export default {
 
 .right p {
     max-width: 90%;
+}
+
+.helpful-links {
+  padding-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 h1,

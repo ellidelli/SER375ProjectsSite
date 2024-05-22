@@ -5,7 +5,7 @@
     <div class="results-container" v-if="searchResults && searchResults.length > 0">
         <h1>Results</h1>
         <search-result v-for="searchResult in searchResults" :key="searchResult.display" :title="searchResult.Title"
-            :author="searchResult.Author" :display="searchResult.display" />
+            :author="searchResult.Author" :summary="searchResult.summary" :display="searchResult.display" />
     </div>
     <p class="no-results-label" v-else-if="(!searchResults || searchResults.length === 0) && searchTerm !== ''">No Results</p>
 </template>
@@ -47,7 +47,7 @@ export default {
                 if (heading.title.toLowerCase().includes(query) || heading.author.toLowerCase().includes(query)) {
                     const display = `${heading.title}-${heading.author}`;
                     if (!cache.has(display)) {
-                        matches.push({ Title: heading.title, Author: heading.author, display });
+                        matches.push({ Title: heading.title, Author: heading.author, summary: heading.summary });
                         cache.add(display);
                     }
                 }

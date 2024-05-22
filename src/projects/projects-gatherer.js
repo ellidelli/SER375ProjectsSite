@@ -3,7 +3,7 @@ import { markRaw } from 'vue'
 // returns a list of all file names that end with .vue inside of the projects folder
 // e.g. if there were files in the projects folder named "SampleProject1.vue" and "SampleProject2.vue", this function would return ['SampleProject1.vue', 'SampleProject2.vue']
 const getAllProjectFileNames = () => {
-  return require.context('@/projects', false, /.vue$/).keys()
+  return require.context('@/projects/project_pages', false, /.vue$/).keys()
 }
 
 // Creates a JSON structure for each project page utilizing their "info" field, which is a custom field containing project metadata
@@ -14,7 +14,7 @@ export const getProjects = () => {
     const name = vueFileName.slice(2, -4)
     return {
       header: {
-        ...require(`./${name}`).default.info
+        ...require(`./project_pages/${name}`).default.info
       }
     }
   })
@@ -29,7 +29,7 @@ export const getProjectComponent = (projectName) => {
   if (!selectedFileName) {
     return null
   }
-  const component = require(`${selectedFileName}`).default
+  const component = require(`./project_pages/${selectedFileName.substr(2)}`).default
   return component ? markRaw(component) : null
 }
 

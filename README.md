@@ -39,12 +39,13 @@ Choose between the 3 different templates.
 | --- | --- | --- |
 |![](https://github.com/ellidelli/SER375ProjectsSite/blob/master/ReadMeImages/OneColumn.png?raw=true) | ![](https://github.com/ellidelli/SER375ProjectsSite/blob/master/ReadMeImages/TwoColumn.png?raw=true) | ![](https://github.com/ellidelli/SER375ProjectsSite/blob/master/ReadMeImages/Slideshow.png?raw=true)
 
-## Column Instructions
-1. _If you chose the slideshow template, [click here](#slideshow-instructions) to go to the slideshow template instructions_
-2. Navigate to ```/src/projects/```. Put your project demo video in the ```/project_videos``` folder and your image(s) in the ```/project_images``` folder
-3. In the ```/projects``` folder, create a new file. Name it your project name, no spaces, followed by .vue ```<YourProjectName>.vue```
-4. Inside this same folder, you will find the sample project templates for each layout. Navigate to the one you want, copy and paste its code into your newly made file
-5. In this section of code:
+## One and Two Column Instructions
+*Note: If you chose the slideshow template, [click here](#slideshow-instructions) to go to the slideshow template instructions*
+
+1. Navigate to ```/src/projects/```. Put your project demo video in the ```/project_videos``` folder and your image(s) in the ```/project_images``` folder
+2. In the ```/project_pages``` folder, create a new file. Name it your project name, no spaces, followed by .vue ```<YourProjectName>.vue```
+3. Inside this same folder, you will find the sample project templates for each layout. Navigate to the one you want, copy and paste its code into your newly made file
+4. In this section of code:
    * Enter your description
    * Enter your story
    * Enter your struggles and triumphs
@@ -67,22 +68,26 @@ Choose between the 3 different templates.
           a, commodi debitis! Ducimus.</p>
    </template>
    <template v-slot:links>
-       <a href="https://www.google.com">google</a>
+       <a href="https://www.google.com">Google</a>
+       <a href="https://www.qu.edu">Quinnipiac</a>
    </template>
    ```
-7. In this section of the code, change the import paths to your image(s) and your video. (uncomment the video import and add more imports if you have more than one photo)
+5. In this section of the code, change the import paths to your image(s) and your video. (uncomment the video import and add more imports if you have more than one photo)
     ```Javascript
-   import twoColumnTemplate from '../components/templates/twoColumnTemplate.vue'
-   import sampleImage from '../projects/project_images/ProjectSampleImage.jpeg';
-   //import sampleVideo from '../projects/project_videos/<VIDEO TITLE>'
+    import twoColumnTemplate from '../../components/templates/twoColumnTemplate.vue'
+    import sampleImage from '../project_images/ProjectSampleImage.jpeg';
+    import sampleVideo from '../project_videos/sample.mp4'
    ```
-8. In this section of code:
+6. In this section of code:
    * Replace the name: with your project name (the same as your vue file)
-   * Replace all information under data() to match your project
+   * Replace all information under `data()` to match your project
    * When it comes to multiple pictures, just add them to the array [just, like, this]
-   * Under the info: section, replace the title with your project name with spaces
-   * Add your name to the author
-   * Change the tags to have as little or as many as you need. Write down languages you've used, such as software, games, etc. This is to make it easier to find similar projects. 
+   * Add your name to the author field
+   * Everything under the info section is metadata for your page to show up in the website's search, so please fill out those fields accordingly
+        * Title and Author name can be the same as `projectTitle` and `author` in the `data` section
+        * Add a brief summary to the summary field (e.g. "Minecraft Mod" or "Stock Trading Website")
+        * Add as many tags are you need, such as languages used, if the project is a game or website, etc. This is to make it easier to find similar projects through the tags page. 
+
    ```Javascript
    export default {
       name: 'TwoColumnSampleProject',
@@ -93,25 +98,28 @@ Choose between the 3 different templates.
         return {
           projectTitle: "Two Column Sample Project",
           author: "John Smith",
+          githubUrl: 'www.github.com',
           pictures: [sampleImage],
-          video: "sampleVideo" //get rid of the quotes when putting in your video variable
+          video: sampleVideo
         }
       },
       info: {
         title: 'Two Column Sample Project',
         author: 'John Smith',
+        summary: "Example Project"
         tags: ["Sample", "Templates", "Open Source", "Help"]
       }
     }                                        
     ```
-9. Check and make sure your project page loads on the site. Check it through the search, and through the tags. If you want to add one of your screenshots into the homescreen background, [click here](#steps-if-you-want-one-of-your-images-to-appear-on-the-homepage-background).
+7. Check and make sure your project page loads on the site. Check it through the search, and through the tags. If you want to add one of your screenshots into the homescreen background, [click here](#steps-if-you-want-one-of-your-images-to-appear-on-the-homepage-background).
 
 ## Slideshow instructions
-_Note: The slideshow height cannot be adjusted so take that into consideration when cropping your photos._
+*Note: The slideshow height cannot be adjusted so take that into consideration when cropping your photos.*
+
 1. Navigate to ```/src/projects/```. Put your project demo video in the ```/project_videos``` folder and your image(s) in the ```/project_images``` folder
-1. Create a new file in the ```/projects``` folder. Name it your project name, no spaces, followed by .vue ```<YourProjectName>.vue```
-2. Inside this same folder, you will find ```SlideshowSampleProject.vue```. Copy and paste its code into your newly made file.
-3. In this section of code:
+2. Create a new file in the ```/projects/project_pages``` folder. Name it your project name, no spaces, followed by .vue ```<YourProjectName>.vue```
+3. Inside this same folder, you will find ```SlideshowSampleProject.vue```. Copy and paste its code into your newly made file.
+4. In this section of code:
    * Enter your description
    * Enter your story
    * Enter your struggles and triumphs
@@ -134,22 +142,23 @@ _Note: The slideshow height cannot be adjusted so take that into consideration w
           a, commodi debitis! Ducimus.</p>
    </template>
    <template v-slot:links>
-       <a href="https://www.google.com">google</a>
+       <a href="https://www.google.com">Google</a>
+       <a href="https://www.qu.edu">Quinnipiac</a>
    </template>
    ```
-4. In this section of code:
+5. In this section of code:
    * Update the image imports to your images
    * Update the video import to your video
 ```Javascript
 //import images
-import one from '../projects/project_images/1.png';
-import two from '../projects/project_images/2.png';
-import three from '../projects/project_images/3.png';
+import one from '../project_images/1.png';
+import two from '../project_images/2.png';
+import three from '../project_images/3.png';
 
 //import video
-import video from '../projects/project_videos/<YOUR VIDEO>'
+import sampleVideo from '../project_videos/sample.mp4'
 ```
-4. In this section of code:
+6. In this section of code:
     * Update the name: to your project name, no spaces, and same as your vue file name. 
 ```Javascript
     name: 'SlideshowSampleProject',
@@ -159,7 +168,7 @@ import video from '../projects/project_videos/<YOUR VIDEO>'
         VueperSlide
     },
 ```
-5. In this section of code:
+7. In this section of code:
    * Change all the data tags to match your project information.
    * When you get to slides, add an image in the same pattern as seen below. Do it as many times as you need.
 ```Javascript
@@ -167,7 +176,8 @@ import video from '../projects/project_videos/<YOUR VIDEO>'
         return {
             projectTitle: "Slideshow Sample Project",
             author: "John Smith",
-            video: "sampleVideo", //get rid of the quotes when putting in your video variable
+            githubUrl: 'www.github.com',
+            video: sampleVideo
             slides: [
                 {
                     image: one
@@ -183,18 +193,19 @@ import video from '../projects/project_videos/<YOUR VIDEO>'
         }
     },
 ```
-6. In this section of code:
-   * Update the title of the project once again, with spaces.
-   * Change the author
-   * Change the tags to have as little or as many you need. Write down languages you've used, software, games, etc. This is to make it easier to find similar projects. 
+8. Everything under the info section is metadata for your page to show up in the website's search, so please fill out those fields accordingly
+    * Title and Author name can be the same as `projectTitle` and `author` in the `data` section
+    * Add a brief summary to the summary field (e.g. "Minecraft Mod" or "Stock Trading Website")
+    * Add as many tags are you need, such as languages used, if the project is a game or website, etc. This is to make it easier to find similar projects through the tags page. 
 ```Javascript
     info: {
         title: 'Slideshow Sample Project',
         author: 'John Smith',
+        summary: 'Example Project',
         tags: ["Sample", "Templates", "Open Source", "Help"]
     }
 ```
-7. Check and make sure your project page loads on the site. Check it through the search, and through the tags.
+9. Check and make sure your project page loads on the site. Check it through the search, and through the tags.
 
 
 ***Please, before continuing, make sure the website still works, and your project page looks the way you want***

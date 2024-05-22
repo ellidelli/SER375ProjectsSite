@@ -1,0 +1,80 @@
+<template>
+  <div>
+    <twoColumnTemplate :projectTitle="projectTitle" :author="author" :githubUrl="githubUrl" :pictures="pictures" :video="video">
+      <template v-slot:description>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque adipisci nesciunt distinctio consectetur
+          quisquam consequatur, corrupti reiciendis ex aut quibusdam minima quidem earum quod architecto deserunt
+          a, commodi debitis! Ducimus.</p>
+      </template>
+      <template v-slot:story>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque adipisci nesciunt distinctio consectetur
+          quisquam consequatur, corrupti reiciendis ex aut quibusdam minima quidem earum quod architecto deserunt
+          a, commodi debitis! Ducimus.</p>
+      </template>
+      <template v-slot:strugglesAndTriumphs>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque adipisci nesciunt distinctio consectetur
+          quisquam consequatur, corrupti reiciendis ex aut quibusdam minima quidem earum quod architecto deserunt
+          a, commodi debitis! Ducimus.</p>
+      </template>
+      <template v-slot:links>
+          <a href="https://www.google.com">Google</a>
+          <a href="https://www.qu.edu">Quinnipiac</a>
+      </template>
+    </twoColumnTemplate>
+  </div>
+</template>
+  
+<script>
+import twoColumnTemplate from '../../components/templates/twoColumnTemplate.vue'
+import sampleImage from '../project_images/ProjectSampleImage.jpeg';
+import sampleVideo from '../project_videos/sample.mp4'
+
+export default {
+  name: 'TwoColumnSampleProject',
+  components: {
+    twoColumnTemplate
+  },
+  data() {
+    return {
+      projectTitle: "Two Column Sample Project",
+      author: "John Smith",
+      githubUrl: 'www.github.com',
+      pictures: [sampleImage],
+      video: sampleVideo
+    }
+  },
+  info: {
+    title: 'Two Column Sample Project',
+    author: 'John Smith',
+    summary: "Example Project",
+    tags: ["Sample", "Templates", "Open Source", "Help", "Spring 2024"]
+  }
+}
+</script>
+
+<style scoped>
+a {
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+  max-width: 90%;
+}
+
+h3 {
+  padding-bottom: 5vh;
+}
+
+p {
+  padding-bottom: 10vh;
+  text-align: left;
+  max-width: 90%;
+}
+
+h1 {
+  padding-bottom: 2vh;
+}
+</style>

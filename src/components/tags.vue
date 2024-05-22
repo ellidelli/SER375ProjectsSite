@@ -4,9 +4,9 @@
         <input type="text" v-model="searchTerm" v-on:input="onFilter" placeholder="Filter tags..." class="searchbar">
     </div>
     <div class="tag-container">
-        <h4 v-for="tag in filteredTags" :key="tag" :style="{ backgroundColor: getTagColor(tag) }" @click="openResults(tag)"
-            class="tagButton">
-            {{ tag }} ({{ tagCounts[tag] || 0 }}) </h4>
+        <router-link v-for="tag in filteredTags" :key="tag" :style="{ backgroundColor: getTagColor(tag) }" :to="`/tags/${encodeURIComponent(tag)}`" class="tagButton">
+            {{ tag }} ({{ tagCounts[tag] || 0 }})
+         </router-link>
     </div>
 </template>
   
@@ -176,7 +176,19 @@ h4 {
 }
 
 .tagButton {
-    margin: 1vh;
+    text-align: center;
+    border-radius: 10px;
+    max-width: fit-content;
+    max-height: fit-content;
+    padding: 9.19px 13.8px 9.19px 13.8px;
+    color: white;
+    font-size: small;
+    margin: 9.19px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .tagButton:hover {

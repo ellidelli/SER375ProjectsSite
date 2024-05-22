@@ -1,7 +1,10 @@
 <template>
     <div class="data">
-        <h1>{{ projectTitle }}</h1>
-        <h3>{{ author }}</h3>
+        <div class="header">
+            <h1>{{ projectTitle }}</h1>
+            <h3>by {{ author }}</h3>
+            <GitHubButton class="github-button" :GitHubUrl="githubUrl"/>
+        </div>
         <div class="container">
             <div class="left">
                 <h1>What is this project?</h1>
@@ -10,6 +13,10 @@
                 <slot name="story"> </slot>
                 <h1>Struggles and Triumphs</h1>
                 <slot name="strugglesAndTriumphs"> </slot>
+                <h1>Helpful Links</h1>
+                <div class="helpful-links">
+                    <slot name="links"></slot>
+                </div>
             </div>
             <div class="right">
                 <div v-for="(picture, index) in pictures" :key="index">
@@ -21,25 +28,24 @@
             </div>
 
         </div>
-        <h1>Helpful Links</h1>
-        <slot name="links"></slot>
     </div>
 </template>
 
 <script>
-import tags from '../tags.vue'
+import GitHubButton from '../GitHubButton.vue'
 
 export default {
     name: 'twoColumnTemplate',
     props: [
         'projectTitle',
         'author',
+        'githubUrl',
         'tags',
         'pictures',
         'video',
     ],
     components: {
-        tags
+        GitHubButton
     }
 }
 </script>
@@ -52,6 +58,21 @@ export default {
 .container {
     display: flex;
     flex-direction: row;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.github-button {
+  margin-bottom: 40px !important;
 }
 
 .left {
@@ -96,6 +117,13 @@ export default {
 
 .left p {
     max-width: 90%;
+}
+
+.helpful-links {
+  padding-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 h1,
